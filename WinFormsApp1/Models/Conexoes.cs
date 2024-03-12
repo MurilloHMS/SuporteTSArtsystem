@@ -11,9 +11,14 @@ namespace WinFormsApp1.Models
     {
         [Key]
         public int CONNID_CON { get; set; }
-        public string CONCTIP { get; set; }
-        public string CONCDES { get; set; }
+        public string CONCTIPCO { get; set; }
+        public string CONCDESC { get; set; }
         public string CONCIPCON { get; set; }
+        public string CONCTIP { get; set; }
+        public string CONCUSRTS { get; set; }
+        public string CONCSENTS { get; set; }
+        public string CONCUSRART { get; set; }
+        public string CONCSENART { get; set; }
         public virtual Cliente? Cliente { get; set; }
     }
 

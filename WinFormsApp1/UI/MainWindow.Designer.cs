@@ -40,64 +40,68 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { opçõesToolStripMenuItem, cadastrosToolStripMenuItem, ajudaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(825, 24);
+            menuStrip1.Padding = new Padding(7, 3, 0, 3);
+            menuStrip1.Size = new Size(943, 30);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
             // opçõesToolStripMenuItem
             // 
             opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
-            opçõesToolStripMenuItem.Size = new Size(59, 20);
+            opçõesToolStripMenuItem.Size = new Size(73, 24);
             opçõesToolStripMenuItem.Text = "Opções";
             // 
             // cadastrosToolStripMenuItem
             // 
             cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastroDeClientesToolStripMenuItem, cadastroDeConexõesToolStripMenuItem });
             cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            cadastrosToolStripMenuItem.Size = new Size(71, 20);
+            cadastrosToolStripMenuItem.Size = new Size(88, 24);
             cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
             // cadastroDeClientesToolStripMenuItem
             // 
             cadastroDeClientesToolStripMenuItem.Name = "cadastroDeClientesToolStripMenuItem";
-            cadastroDeClientesToolStripMenuItem.Size = new Size(192, 22);
+            cadastroDeClientesToolStripMenuItem.Size = new Size(240, 26);
             cadastroDeClientesToolStripMenuItem.Text = "Cadastro de Clientes";
             cadastroDeClientesToolStripMenuItem.Click += cadastroDeClientesToolStripMenuItem_Click;
             // 
             // cadastroDeConexõesToolStripMenuItem
             // 
             cadastroDeConexõesToolStripMenuItem.Name = "cadastroDeConexõesToolStripMenuItem";
-            cadastroDeConexõesToolStripMenuItem.Size = new Size(192, 22);
+            cadastroDeConexõesToolStripMenuItem.Size = new Size(240, 26);
             cadastroDeConexõesToolStripMenuItem.Text = "Cadastro de Conexões";
             // 
             // ajudaToolStripMenuItem
             // 
             ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            ajudaToolStripMenuItem.Size = new Size(50, 20);
+            ajudaToolStripMenuItem.Size = new Size(62, 24);
             ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // TB_MainWindow
             // 
             TB_MainWindow.Dock = DockStyle.Fill;
-            TB_MainWindow.Location = new Point(0, 24);
+            TB_MainWindow.Location = new Point(0, 30);
+            TB_MainWindow.Margin = new Padding(3, 4, 3, 4);
             TB_MainWindow.Name = "TB_MainWindow";
             TB_MainWindow.SelectedIndex = 0;
-            TB_MainWindow.Size = new Size(825, 556);
+            TB_MainWindow.Size = new Size(943, 791);
             TB_MainWindow.TabIndex = 1;
             // 
             // MainWindow
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(825, 580);
+            ClientSize = new Size(943, 821);
             Controls.Add(TB_MainWindow);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "MainWindow";
-            Text = "Form1";
+            Text = "ArtSystem Suporte";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

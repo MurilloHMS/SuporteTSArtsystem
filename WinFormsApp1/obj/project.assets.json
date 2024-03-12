@@ -4183,24 +4183,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Murillo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\artsy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "S:\\SuporteRemotoArtsystem\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\WinFormsApp1.csproj",
       "projectName": "WinFormsApp1",
-      "projectPath": "S:\\SuporteRemotoArtsystem\\WinFormsApp1\\WinFormsApp1.csproj",
-      "packagesPath": "C:\\Users\\Murillo\\.nuget\\packages\\",
-      "outputPath": "S:\\SuporteRemotoArtsystem\\WinFormsApp1\\obj\\",
+      "projectPath": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\WinFormsApp1.csproj",
+      "packagesPath": "C:\\Users\\artsy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Murillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\artsy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

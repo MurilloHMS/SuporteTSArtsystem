@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WinFormsApp1",
+    "\\WinFormsApp1\\Databases",
+    "\\WinFormsApp1\\Migrations",
+    "\\WinFormsApp1\\Models",
+    "\\WinFormsApp1\\Properties",
+    "\\WinFormsApp1\\UI",
+    "\\WinFormsApp1\\UI\\UserControls"
+  ],
+  "SelectedNode": "\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -4,6 +4,9 @@
     <Compile Update="UI\Finder.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\Frm_CadastroConexao.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
