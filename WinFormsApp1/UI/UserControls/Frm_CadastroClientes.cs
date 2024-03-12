@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -39,13 +40,14 @@ namespace WinFormsApp1.UI.UserControls
 
             if (finder.DialogResult == DialogResult.OK)
             {
-                TXB_ID.Text = Convert.ToString(recuperaClientePorNome.CLINID_CLI);
+                var idCliente = recuperaClientePorNome.CLINID_CLI;
+                TXB_ID.Text = Convert.ToString(idCliente);
                 TXB_Nome.Text = recuperaClientePorNome.CLICRZS;
                 TXB_Apelido.Text = recuperaClientePorNome.CLICAPE;
                 TXB_Observacao.Text = recuperaClientePorNome.CLICDES;
                 MTXB_Cnpj.Text = recuperaClientePorNome.CLICCNPJ;
 
-                var resultado = conexoesDal.GetAll();
+                var resultado = conexoesDal.listFor(r => r.CONNIDCLI.Equals(idCliente));
                 DGV_ConexoesRemotas.DataSource = resultado;
             }
         }
@@ -80,7 +82,26 @@ namespace WinFormsApp1.UI.UserControls
                 Frm_CadastroConexao frm = new Frm_CadastroConexao(idCliente, nomeCliente);
                 frm.ShowDialog();
             }
-            
+
+        }
+
+        private void DGV_ConexoesRemotas_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void DGV_ConexoesRemotas_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if(e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow row = DGV_ConexoesRemotas.Rows[e.RowIndex];
+                string value = row.Cells[3].Value.ToString();
+
+                Process process = new Process();
+                process.StartInfo.FileName = "mstsc.exe";
+                process.StartInfo.Arguments = $"/v: {value}";
+                process.Start();
+            }
         }
     }
 }

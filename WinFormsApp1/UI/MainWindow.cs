@@ -19,5 +19,16 @@ namespace WinFormsApp1
             tb.Controls.Add(frm);
             TB_MainWindow.TabPages.Add(tb);
         }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            Frm_CadastroClientes frm = new Frm_CadastroClientes();
+            frm.Dock = DockStyle.Fill;
+            TabPage tb = new TabPage();
+            tb.Name = "Cadastro Clientes";
+            tb.Text = "Clientes";
+            tb.Controls.Add(frm);
+            TB_MainWindow.TabPages.Add(tb);
+        }
     }
 }

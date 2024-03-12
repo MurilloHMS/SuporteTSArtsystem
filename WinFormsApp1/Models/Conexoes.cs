@@ -19,7 +19,8 @@ namespace WinFormsApp1.Models
         public string CONCSENTS { get; set; }
         public string CONCUSRART { get; set; }
         public string CONCSENART { get; set; }
-        public virtual Cliente? Cliente { get; set; }
+        public int CONNIDCLI { get; set; }
+        public virtual Cliente? CONCCLI { get; set; }
     }
 
 }

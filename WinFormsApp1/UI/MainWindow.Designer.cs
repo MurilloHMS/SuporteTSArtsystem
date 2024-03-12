@@ -102,6 +102,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "MainWindow";
             Text = "ArtSystem Suporte";
+            Load += MainWindow_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

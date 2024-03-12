@@ -29,10 +29,10 @@ namespace WinFormsApp1.UI
         {
             //var id = TXB_IDConexao.Text;
             string cliente = TXB_Cliente.Text;
-            string tipoConexao = CB_TipoConexao.SelectedText;
+            string tipoConexao = CB_TipoConexao.SelectedItem.ToString();
             string enderecos = TXB_Endereco.Text;
-            string tipo = CB_Tipo.SelectedText;
-            string usrConexao = CB_UsrConexaoRemota.SelectedText;
+            string tipo = CB_Tipo.SelectedItem.ToString();
+            string usrConexao = CB_UsrConexaoRemota.SelectedItem.ToString();
             string senhaConexao = TXB_SenhaConexaoRemota.Text;
             string usuarioArtsystem = TXB_UsrArtsystem.Text;
             string senhaArtsystem = TXB_SenhaArtsystem.Text;
@@ -53,7 +53,8 @@ namespace WinFormsApp1.UI
             conexoes.CONCUSRART = usuarioArtsystem;
             conexoes.CONCSENART = senhaArtsystem;
             conexoes.CONCDESC = observacoes;
-            conexoes.Cliente = recuperaClientePorNome;
+            conexoes.CONCCLI = recuperaClientePorNome;
+            conexoes.CONNIDCLI = _Id;
 
             ConexoesProfile profile = new ConexoesProfile();
             profile.Executar(conexoesDal, conexoes);

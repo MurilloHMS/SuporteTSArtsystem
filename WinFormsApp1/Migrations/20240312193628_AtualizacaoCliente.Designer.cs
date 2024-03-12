@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WinFormsApp1.Databases;
 
@@ -11,9 +12,11 @@ using WinFormsApp1.Databases;
 namespace WinFormsApp1.Migrations
 {
     [DbContext(typeof(SuporteContext))]
-    partial class SuporteContextModelSnapshot : ModelSnapshot
+    [Migration("20240312193628_AtualizacaoCliente")]
+    partial class AtualizacaoCliente
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -62,9 +65,6 @@ namespace WinFormsApp1.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CONNID_CON"));
 
-                    b.Property<int?>("CONCCLICLINID_CLI")
-                        .HasColumnType("int");
-
                     b.Property<string>("CONCDESC")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -97,23 +97,23 @@ namespace WinFormsApp1.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CONNIDCLI")
+                    b.Property<int?>("CONNID_CLICLINID_CLI")
                         .HasColumnType("int");
 
                     b.HasKey("CONNID_CON");
 
-                    b.HasIndex("CONCCLICLINID_CLI");
+                    b.HasIndex("CONNID_CLICLINID_CLI");
 
                     b.ToTable("Conexoes");
                 });
 
             modelBuilder.Entity("WinFormsApp1.Models.Conexoes", b =>
                 {
-                    b.HasOne("WinFormsApp1.Models.Cliente", "CONCCLI")
+                    b.HasOne("WinFormsApp1.Models.Cliente", "CONNID_CLI")
                         .WithMany("Conexao")
-                        .HasForeignKey("CONCCLICLINID_CLI");
+                        .HasForeignKey("CONNID_CLICLINID_CLI");
 
-                    b.Navigation("CONCCLI");
+                    b.Navigation("CONNID_CLI");
                 });
 
             modelBuilder.Entity("WinFormsApp1.Models.Cliente", b =>

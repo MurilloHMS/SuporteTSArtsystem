@@ -44,7 +44,7 @@ namespace WinFormsApp1.Databases
 
         public IEnumerable<T> listFor(Func<T, bool> condicao)
         {
-            return _context.Set<T>().Where(condicao);
+            return _context.Set<T>().Where(condicao).ToList();
         }
     }
 }

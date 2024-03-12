@@ -43,6 +43,7 @@
             groupBox2 = new GroupBox();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            DGV_ConexoesRemotas = new DataGridView();
             button5 = new Button();
             button7 = new Button();
             tabPage2 = new TabPage();
@@ -52,13 +53,12 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            DGV_ConexoesRemotas = new DataGridView();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGV_ConexoesRemotas).BeginInit();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -220,6 +220,21 @@
             tabPage1.Text = "Conexões Remotas";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // DGV_ConexoesRemotas
+            // 
+            DGV_ConexoesRemotas.AllowUserToAddRows = false;
+            DGV_ConexoesRemotas.AllowUserToDeleteRows = false;
+            DGV_ConexoesRemotas.BackgroundColor = SystemColors.Control;
+            DGV_ConexoesRemotas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGV_ConexoesRemotas.Location = new Point(3, 3);
+            DGV_ConexoesRemotas.Name = "DGV_ConexoesRemotas";
+            DGV_ConexoesRemotas.ReadOnly = true;
+            DGV_ConexoesRemotas.RowHeadersWidth = 51;
+            DGV_ConexoesRemotas.Size = new Size(854, 261);
+            DGV_ConexoesRemotas.TabIndex = 15;
+            DGV_ConexoesRemotas.CellMouseDoubleClick += DGV_ConexoesRemotas_CellMouseDoubleClick;
+            DGV_ConexoesRemotas.MouseDoubleClick += DGV_ConexoesRemotas_MouseDoubleClick;
+            // 
             // button5
             // 
             button5.Location = new Point(439, 271);
@@ -315,16 +330,6 @@
             button3.Text = "Cancelar";
             button3.UseVisualStyleBackColor = true;
             // 
-            // DGV_ConexoesRemotas
-            // 
-            DGV_ConexoesRemotas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DGV_ConexoesRemotas.Dock = DockStyle.Fill;
-            DGV_ConexoesRemotas.Location = new Point(3, 3);
-            DGV_ConexoesRemotas.Name = "DGV_ConexoesRemotas";
-            DGV_ConexoesRemotas.RowHeadersWidth = 51;
-            DGV_ConexoesRemotas.Size = new Size(854, 302);
-            DGV_ConexoesRemotas.TabIndex = 15;
-            // 
             // Frm_CadastroClientes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -342,8 +347,8 @@
             groupBox2.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
-            tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)DGV_ConexoesRemotas).EndInit();
+            tabPage2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
