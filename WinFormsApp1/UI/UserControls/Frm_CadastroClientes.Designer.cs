@@ -45,7 +45,6 @@
             tabPage1 = new TabPage();
             button5 = new Button();
             button7 = new Button();
-            LSTB_Conexoes = new ListBox();
             tabPage2 = new TabPage();
             button8 = new Button();
             button10 = new Button();
@@ -53,11 +52,13 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            DGV_ConexoesRemotas = new DataGridView();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DGV_ConexoesRemotas).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -101,7 +102,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(87, 64);
+            button4.Location = new Point(87, 60);
             button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
             button4.Size = new Size(32, 31);
@@ -208,9 +209,9 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(DGV_ConexoesRemotas);
             tabPage1.Controls.Add(button5);
             tabPage1.Controls.Add(button7);
-            tabPage1.Controls.Add(LSTB_Conexoes);
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
@@ -239,15 +240,6 @@
             button7.Text = "Inserir";
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
-            // 
-            // LSTB_Conexoes
-            // 
-            LSTB_Conexoes.FormattingEnabled = true;
-            LSTB_Conexoes.Location = new Point(11, 16);
-            LSTB_Conexoes.Margin = new Padding(3, 4, 3, 4);
-            LSTB_Conexoes.Name = "LSTB_Conexoes";
-            LSTB_Conexoes.Size = new Size(834, 244);
-            LSTB_Conexoes.TabIndex = 11;
             // 
             // tabPage2
             // 
@@ -323,6 +315,16 @@
             button3.Text = "Cancelar";
             button3.UseVisualStyleBackColor = true;
             // 
+            // DGV_ConexoesRemotas
+            // 
+            DGV_ConexoesRemotas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGV_ConexoesRemotas.Dock = DockStyle.Fill;
+            DGV_ConexoesRemotas.Location = new Point(3, 3);
+            DGV_ConexoesRemotas.Name = "DGV_ConexoesRemotas";
+            DGV_ConexoesRemotas.RowHeadersWidth = 51;
+            DGV_ConexoesRemotas.Size = new Size(854, 302);
+            DGV_ConexoesRemotas.TabIndex = 15;
+            // 
             // Frm_CadastroClientes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -341,6 +343,7 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)DGV_ConexoesRemotas).EndInit();
             ResumeLayout(false);
         }
 
@@ -362,7 +365,6 @@
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
-        private ListBox LSTB_Conexoes;
         private ListBox LSTB_Contatos;
         private Button button5;
         private Button button7;
@@ -371,5 +373,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private DataGridView DGV_ConexoesRemotas;
     }
 }

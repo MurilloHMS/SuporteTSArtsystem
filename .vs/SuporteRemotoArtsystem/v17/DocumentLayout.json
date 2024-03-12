@@ -3,33 +3,33 @@
   "WorkspaceRootPath": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Migrations\\20240312144352_ConexoesUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WinFormsApp1\\Migrations\\20240312144352_ConexoesUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\artsy\\trabalho\\desenvolvimento\\suportetsartsystem\\winformsapp1\\models\\conexoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\models\\conexoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\artsy\\trabalho\\desenvolvimento\\suportetsartsystem\\winformsapp1\\databases\\suportecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\databases\\suportecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\artsy\\trabalho\\desenvolvimento\\suportetsartsystem\\winformsapp1\\ui\\usercontrols\\frm_cadastroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\usercontrols\\frm_cadastroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\artsy\\trabalho\\desenvolvimento\\suportetsartsystem\\winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\artsy\\trabalho\\desenvolvimento\\suportetsartsystem\\winformsapp1\\ui\\usercontrols\\frm_cadastroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\usercontrols\\frm_cadastroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\artsy\\trabalho\\desenvolvimento\\suportetsartsystem\\winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\artsy\\trabalho\\desenvolvimento\\suportetsartsystem\\winformsapp1\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\artsy\\trabalho\\desenvolvimento\\suportetsartsystem\\winformsapp1\\models\\conexoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\models\\conexoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
+          "DockedWidth": 193,
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -43,63 +43,63 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240312144352_ConexoesUpdate.cs",
-              "DocumentMoniker": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Migrations\\20240312144352_ConexoesUpdate.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Migrations\\20240312144352_ConexoesUpdate.cs",
-              "ToolTip": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Migrations\\20240312144352_ConexoesUpdate.cs",
-              "RelativeToolTip": "WinFormsApp1\\Migrations\\20240312144352_ConexoesUpdate.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T14:43:54.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Frm_CadastroConexao.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
-              "ToolTip": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Frm_CadastroConexao.cs [Projeto]",
-              "RelativeToolTip": "WinFormsApp1\\UI\\Frm_CadastroConexao.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T14:09:50.917Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Frm_CadastroClientes.cs",
               "DocumentMoniker": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
               "ToolTip": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
               "RelativeToolTip": "WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAApwC8AAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwC8AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T13:36:28.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SuporteContext.cs",
-              "DocumentMoniker": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Databases\\SuporteContext.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Databases\\SuporteContext.cs",
-              "ToolTip": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Databases\\SuporteContext.cs",
-              "RelativeToolTip": "WinFormsApp1\\Databases\\SuporteContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T14:14:57.42Z",
+              "WhenOpened": "2024-03-12T18:22:49.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Frm_CadastroClientes.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
+              "ToolTip": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs [Projeto]",
+              "RelativeToolTip": "WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T18:17:06.784Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm_CadastroConexao.cs",
+              "DocumentMoniker": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
+              "ToolTip": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
+              "RelativeToolTip": "WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAADoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T15:34:33.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Models\\Cliente.cs",
+              "RelativeToolTip": "WinFormsApp1\\Models\\Cliente.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T17:31:17.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Conexoes.cs",
               "DocumentMoniker": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Models\\Conexoes.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Models\\Conexoes.cs",
               "ToolTip": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\WinFormsApp1\\Models\\Conexoes.cs",
               "RelativeToolTip": "WinFormsApp1\\Models\\Conexoes.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwA4AAAAsAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T13:01:47.119Z",
               "EditorCaption": ""

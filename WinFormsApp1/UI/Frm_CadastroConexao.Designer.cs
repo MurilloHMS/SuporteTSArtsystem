@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            TXB_IDConexao = new TextBox();
             label2 = new Label();
-            comboBox1 = new ComboBox();
-            textBox2 = new TextBox();
+            CB_TipoConexao = new ComboBox();
+            TXB_Endereco = new TextBox();
             label3 = new Label();
-            comboBox2 = new ComboBox();
+            CB_Tipo = new ComboBox();
             label4 = new Label();
             label5 = new Label();
-            textBox3 = new TextBox();
+            TXB_Cliente = new TextBox();
             label6 = new Label();
-            textBox4 = new TextBox();
+            TXB_SenhaConexaoRemota = new TextBox();
             label7 = new Label();
-            textBox5 = new TextBox();
+            TXB_UsrArtsystem = new TextBox();
             label8 = new Label();
-            textBox6 = new TextBox();
+            TXB_SenhaArtsystem = new TextBox();
             label9 = new Label();
-            textBox7 = new TextBox();
+            TXB_Observacoes = new TextBox();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             label10 = new Label();
-            comboBox3 = new ComboBox();
+            CB_UsrConexaoRemota = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -62,12 +62,12 @@
             label1.TabIndex = 0;
             label1.Text = "ID";
             // 
-            // textBox1
+            // TXB_IDConexao
             // 
-            textBox1.Location = new Point(25, 32);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(43, 27);
-            textBox1.TabIndex = 1;
+            TXB_IDConexao.Location = new Point(25, 32);
+            TXB_IDConexao.Name = "TXB_IDConexao";
+            TXB_IDConexao.Size = new Size(43, 27);
+            TXB_IDConexao.TabIndex = 1;
             // 
             // label2
             // 
@@ -78,41 +78,41 @@
             label2.TabIndex = 2;
             label2.Text = "Tipo de Conexão";
             // 
-            // comboBox1
+            // CB_TipoConexao
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "TS", "ANYDESK" });
-            comboBox1.Location = new Point(21, 105);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 3;
+            CB_TipoConexao.DropDownStyle = ComboBoxStyle.DropDownList;
+            CB_TipoConexao.FormattingEnabled = true;
+            CB_TipoConexao.Items.AddRange(new object[] { "TS", "ANYDESK" });
+            CB_TipoConexao.Location = new Point(21, 105);
+            CB_TipoConexao.Name = "CB_TipoConexao";
+            CB_TipoConexao.Size = new Size(151, 28);
+            CB_TipoConexao.TabIndex = 3;
             // 
-            // textBox2
+            // TXB_Endereco
             // 
-            textBox2.Location = new Point(213, 105);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(138, 27);
-            textBox2.TabIndex = 4;
+            TXB_Endereco.Location = new Point(213, 105);
+            TXB_Endereco.Name = "TXB_Endereco";
+            TXB_Endereco.Size = new Size(138, 27);
+            TXB_Endereco.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(213, 82);
             label3.Name = "label3";
-            label3.Size = new Size(21, 20);
+            label3.Size = new Size(71, 20);
             label3.TabIndex = 5;
-            label3.Text = "IP";
+            label3.Text = "Endereço";
             // 
-            // comboBox2
+            // CB_Tipo
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "SERVIDOR", "SERVERSAT", "RETAG", "OUTROS" });
-            comboBox2.Location = new Point(377, 105);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(151, 28);
-            comboBox2.TabIndex = 7;
+            CB_Tipo.DropDownStyle = ComboBoxStyle.DropDownList;
+            CB_Tipo.FormattingEnabled = true;
+            CB_Tipo.Items.AddRange(new object[] { "SERVIDOR", "SERVERSAT", "RETAG", "OUTROS" });
+            CB_Tipo.Location = new Point(377, 105);
+            CB_Tipo.Name = "CB_Tipo";
+            CB_Tipo.Size = new Size(151, 28);
+            CB_Tipo.TabIndex = 7;
             // 
             // label4
             // 
@@ -132,12 +132,13 @@
             label5.TabIndex = 9;
             label5.Text = "Cliente";
             // 
-            // textBox3
+            // TXB_Cliente
             // 
-            textBox3.Location = new Point(102, 32);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(414, 27);
-            textBox3.TabIndex = 8;
+            TXB_Cliente.Location = new Point(102, 32);
+            TXB_Cliente.Name = "TXB_Cliente";
+            TXB_Cliente.ReadOnly = true;
+            TXB_Cliente.Size = new Size(414, 27);
+            TXB_Cliente.TabIndex = 8;
             // 
             // label6
             // 
@@ -148,12 +149,12 @@
             label6.TabIndex = 11;
             label6.Text = "Senha Conexão Remota";
             // 
-            // textBox4
+            // TXB_SenhaConexaoRemota
             // 
-            textBox4.Location = new Point(25, 252);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(205, 27);
-            textBox4.TabIndex = 10;
+            TXB_SenhaConexaoRemota.Location = new Point(25, 252);
+            TXB_SenhaConexaoRemota.Name = "TXB_SenhaConexaoRemota";
+            TXB_SenhaConexaoRemota.Size = new Size(205, 27);
+            TXB_SenhaConexaoRemota.TabIndex = 10;
             // 
             // label7
             // 
@@ -164,12 +165,12 @@
             label7.TabIndex = 13;
             label7.Text = "Usuário ArtSystem";
             // 
-            // textBox5
+            // TXB_UsrArtsystem
             // 
-            textBox5.Location = new Point(336, 187);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(192, 27);
-            textBox5.TabIndex = 12;
+            TXB_UsrArtsystem.Location = new Point(336, 187);
+            TXB_UsrArtsystem.Name = "TXB_UsrArtsystem";
+            TXB_UsrArtsystem.Size = new Size(192, 27);
+            TXB_UsrArtsystem.TabIndex = 12;
             // 
             // label8
             // 
@@ -180,12 +181,12 @@
             label8.TabIndex = 15;
             label8.Text = "Senha ArtSystem";
             // 
-            // textBox6
+            // TXB_SenhaArtsystem
             // 
-            textBox6.Location = new Point(336, 252);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(192, 27);
-            textBox6.TabIndex = 14;
+            TXB_SenhaArtsystem.Location = new Point(336, 252);
+            TXB_SenhaArtsystem.Name = "TXB_SenhaArtsystem";
+            TXB_SenhaArtsystem.Size = new Size(192, 27);
+            TXB_SenhaArtsystem.TabIndex = 14;
             // 
             // label9
             // 
@@ -196,13 +197,13 @@
             label9.TabIndex = 17;
             label9.Text = "Observações";
             // 
-            // textBox7
+            // TXB_Observacoes
             // 
-            textBox7.Location = new Point(25, 343);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(503, 66);
-            textBox7.TabIndex = 16;
+            TXB_Observacoes.Location = new Point(25, 343);
+            TXB_Observacoes.Multiline = true;
+            TXB_Observacoes.Name = "TXB_Observacoes";
+            TXB_Observacoes.Size = new Size(503, 66);
+            TXB_Observacoes.TabIndex = 16;
             // 
             // button1
             // 
@@ -213,6 +214,7 @@
             button1.TabIndex = 18;
             button1.Text = "Inserir";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -243,46 +245,47 @@
             label10.TabIndex = 21;
             label10.Text = "Usuário Conexão Remota";
             // 
-            // comboBox3
+            // CB_UsrConexaoRemota
             // 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "ART", "ARTYSTEM", "AS_BXALOGS", "AS_INSTALL", "TODOS" });
-            comboBox3.Location = new Point(21, 184);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(209, 28);
-            comboBox3.TabIndex = 22;
+            CB_UsrConexaoRemota.DropDownStyle = ComboBoxStyle.DropDownList;
+            CB_UsrConexaoRemota.FormattingEnabled = true;
+            CB_UsrConexaoRemota.Items.AddRange(new object[] { "ART", "ARTYSTEM", "AS_BXALOGS", "AS_INSTALL", "TODOS" });
+            CB_UsrConexaoRemota.Location = new Point(21, 184);
+            CB_UsrConexaoRemota.Name = "CB_UsrConexaoRemota";
+            CB_UsrConexaoRemota.Size = new Size(209, 28);
+            CB_UsrConexaoRemota.TabIndex = 22;
             // 
             // Frm_CadastroConexao
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(555, 511);
-            Controls.Add(comboBox3);
+            Controls.Add(CB_UsrConexaoRemota);
             Controls.Add(label10);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label9);
-            Controls.Add(textBox7);
+            Controls.Add(TXB_Observacoes);
             Controls.Add(label8);
-            Controls.Add(textBox6);
+            Controls.Add(TXB_SenhaArtsystem);
             Controls.Add(label7);
-            Controls.Add(textBox5);
+            Controls.Add(TXB_UsrArtsystem);
             Controls.Add(label6);
-            Controls.Add(textBox4);
+            Controls.Add(TXB_SenhaConexaoRemota);
             Controls.Add(label5);
-            Controls.Add(textBox3);
-            Controls.Add(comboBox2);
+            Controls.Add(TXB_Cliente);
+            Controls.Add(CB_Tipo);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(TXB_Endereco);
+            Controls.Add(CB_TipoConexao);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(TXB_IDConexao);
             Controls.Add(label1);
             Name = "Frm_CadastroConexao";
             Text = "Cadastro Conexões";
+            Load += Frm_CadastroConexao_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -290,27 +293,27 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox TXB_IDConexao;
         private Label label2;
-        private ComboBox comboBox1;
-        private TextBox textBox2;
+        private ComboBox CB_TipoConexao;
+        private TextBox TXB_Endereco;
         private Label label3;
-        private ComboBox comboBox2;
+        private ComboBox CB_Tipo;
         private Label label4;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox TXB_Cliente;
         private Label label6;
-        private TextBox textBox4;
+        private TextBox TXB_SenhaConexaoRemota;
         private Label label7;
-        private TextBox textBox5;
+        private TextBox TXB_UsrArtsystem;
         private Label label8;
-        private TextBox textBox6;
+        private TextBox TXB_SenhaArtsystem;
         private Label label9;
-        private TextBox textBox7;
+        private TextBox TXB_Observacoes;
         private Button button1;
         private Button button2;
         private Button button3;
         private Label label10;
-        private ComboBox comboBox3;
+        private ComboBox CB_UsrConexaoRemota;
     }
 }

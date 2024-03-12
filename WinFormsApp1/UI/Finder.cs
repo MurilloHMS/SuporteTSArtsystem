@@ -18,7 +18,6 @@ namespace WinFormsApp1.UI
         public int idSelect { get; set; }
         public Finder()
         {
-
             InitializeComponent();
             PreencherLista();
             LB_Finder.Sorted = true;
@@ -29,10 +28,12 @@ namespace WinFormsApp1.UI
             var context = new SuporteContext();
             var clienteDal = new DAL<Cliente>(context);
 
-            ItemBox x = new ItemBox();
+            
             LB_Finder.Items.Clear();
-            foreach (var cliente in clienteDal.GetAll())
+            var retornoTodosOsClientes = clienteDal.GetAll();
+            foreach (var cliente in retornoTodosOsClientes)
             {
+                ItemBox x = new ItemBox();
                 x.Id = cliente.CLINID_CLI;
                 x.Nome = cliente.CLICRZS;
                 LB_Finder.Items.Add(x);

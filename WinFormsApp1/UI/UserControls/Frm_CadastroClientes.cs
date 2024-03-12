@@ -31,10 +31,22 @@ namespace WinFormsApp1.UI.UserControls
             Finder finder = new Finder();
             finder.ShowDialog();
 
+            var context = new SuporteContext();
+            var clienteDal = new DAL<Cliente>(context);
+            var conexoesDal = new DAL<Conexoes>(context);
+            var id = finder.idSelect;
+            var recuperaClientePorNome = clienteDal.GetFor(c => c.CLINID_CLI.Equals(id));
+
             if (finder.DialogResult == DialogResult.OK)
             {
-                var id = finder.idSelect;
-                MessageBox.Show($"Id Selecionado: {id}");
+                TXB_ID.Text = Convert.ToString(recuperaClientePorNome.CLINID_CLI);
+                TXB_Nome.Text = recuperaClientePorNome.CLICRZS;
+                TXB_Apelido.Text = recuperaClientePorNome.CLICAPE;
+                TXB_Observacao.Text = recuperaClientePorNome.CLICDES;
+                MTXB_Cnpj.Text = recuperaClientePorNome.CLICCNPJ;
+
+                var resultado = conexoesDal.GetAll();
+                DGV_ConexoesRemotas.DataSource = resultado;
             }
         }
 
@@ -61,8 +73,14 @@ namespace WinFormsApp1.UI.UserControls
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Frm_CadastroConexao frm = new Frm_CadastroConexao();
-            frm.ShowDialog();
+            if (!String.IsNullOrEmpty(TXB_ID.Text))
+            {
+                int idCliente = Convert.ToInt32(TXB_ID.Text);
+                var nomeCliente = TXB_Nome.Text;
+                Frm_CadastroConexao frm = new Frm_CadastroConexao(idCliente, nomeCliente);
+                frm.ShowDialog();
+            }
+            
         }
     }
 }
