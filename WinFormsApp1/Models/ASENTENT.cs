@@ -33,12 +33,12 @@ namespace WinFormsApp1.Models
         public DateTime? ENTDDATCAD { get; set; } //data de cadastro
         public string? ENTCUSUALT { get; set; } //usuario alteração
         public DateTime? ENTDDATALT { get; set; } //data de alteração
-        public virtual ICollection<Conexoes> Conexao { get; set; } = new List<Conexoes>();
+        /*public virtual ICollection<Conexoes> Conexao { get; set; } = new List<Conexoes>();
         
         public void AdicionarConexao(Conexoes conexao)
         {
             Conexao.Add(conexao);
-        }
+        }*/
     }
 
 }

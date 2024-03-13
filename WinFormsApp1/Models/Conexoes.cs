@@ -20,7 +20,6 @@ namespace WinFormsApp1.Models
         public string CONCUSRART { get; set; }
         public string CONCSENART { get; set; }
         public int CONNIDCLI { get; set; }
-        public virtual ASENTENT? CONCCLI { get; set; }
     }
 
 }

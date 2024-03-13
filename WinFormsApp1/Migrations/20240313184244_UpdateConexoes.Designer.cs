@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WinFormsApp1.Databases;
 
@@ -11,9 +12,11 @@ using WinFormsApp1.Databases;
 namespace WinFormsApp1.Migrations
 {
     [DbContext(typeof(SuporteContext))]
-    partial class SuporteContextModelSnapshot : ModelSnapshot
+    [Migration("20240313184244_UpdateConexoes")]
+    partial class UpdateConexoes
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

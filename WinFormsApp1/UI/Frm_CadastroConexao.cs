@@ -59,7 +59,6 @@ namespace WinFormsApp1.UI
                     conexoes.CONCUSRART = usuarioArtsystem;
                     conexoes.CONCSENART = senhaArtsystem;
                     conexoes.CONCDESC = observacoes;
-                    conexoes.CONCCLI = recuperaClientePorNome;
                     conexoes.CONNIDCLI = _Id;
                     ConexoesProfile profile = new ConexoesProfile();
                     profile.Executar(conexoesDal, conexoes);
@@ -76,7 +75,6 @@ namespace WinFormsApp1.UI
                 conexoes.CONCUSRART = usuarioArtsystem;
                 conexoes.CONCSENART = senhaArtsystem;
                 conexoes.CONCDESC = observacoes;
-                conexoes.CONCCLI = recuperaClientePorNome;
                 conexoes.CONNIDCLI = _Id;
                 ConexoesProfile profile = new ConexoesProfile();
                 profile.Executar(conexoesDal, conexoes);
