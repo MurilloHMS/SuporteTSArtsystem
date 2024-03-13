@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -92,7 +93,7 @@ namespace WinFormsApp1.UI.UserControls
 
         private void DGV_ConexoesRemotas_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if(e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 DataGridViewRow row = DGV_ConexoesRemotas.Rows[e.RowIndex];
                 string value = row.Cells[3].Value.ToString();
@@ -101,6 +102,36 @@ namespace WinFormsApp1.UI.UserControls
                 process.StartInfo.FileName = "mstsc.exe";
                 process.StartInfo.Arguments = $"/v: {value}";
                 process.Start();
+            }
+        }
+
+        private void DGV_ConexoesRemotas_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void DGV_ConexoesRemotas_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                DialogResult msg = MessageBox.Show("Deseja Excluir a Conexão selecionada? ", "Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (msg == DialogResult.Yes)
+                {
+                    var context = new SuporteContext();
+                    var conexoesDal = new DAL<Conexoes>(context);
+
+                    DataGridViewRow selectedRow = DGV_ConexoesRemotas.SelectedRows[0];
+
+                    
+                    string ids = selectedRow.Cells[0].Value.ToString();
+                    int id = int.Parse(ids);
+                    Conexoes resultado = conexoesDal.GetFor(c => c.CONNID_CON.Equals(id));
+                    conexoesDal.DeleteDB(resultado);
+
+                    
+
+
+                }
             }
         }
     }

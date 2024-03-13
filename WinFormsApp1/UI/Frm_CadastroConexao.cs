@@ -42,23 +42,45 @@ namespace WinFormsApp1.UI
             var clienteDal = new DAL<Cliente>(context);
             var conexoesDal = new DAL<Conexoes>(context);
             var recuperaClientePorNome = clienteDal.GetFor(c => c.CLICRZS.Equals(cliente));
+            
+            
+            List<string> usuarios = new List<string>() {"ART", "ARTSYSTEM", "AS_BXALOGS", "AS_INSTALL" };
 
-
-            Conexoes conexoes = new Conexoes();
-            conexoes.CONCTIPCO = tipoConexao;
-            conexoes.CONCIPCON = enderecos;
-            conexoes.CONCTIP = tipo;
-            conexoes.CONCUSRTS = usrConexao;
-            conexoes.CONCSENTS = senhaConexao;
-            conexoes.CONCUSRART = usuarioArtsystem;
-            conexoes.CONCSENART = senhaArtsystem;
-            conexoes.CONCDESC = observacoes;
-            conexoes.CONCCLI = recuperaClientePorNome;
-            conexoes.CONNIDCLI = _Id;
-
-            ConexoesProfile profile = new ConexoesProfile();
-            profile.Executar(conexoesDal, conexoes);
-
+            if (usrConexao.Equals("TODOS"))
+            {
+                foreach(string i in usuarios)
+                {
+                    Conexoes conexoes = new Conexoes();
+                    conexoes.CONCTIPCO = tipoConexao;
+                    conexoes.CONCIPCON = enderecos;
+                    conexoes.CONCTIP = tipo;
+                    conexoes.CONCUSRTS = i;
+                    conexoes.CONCSENTS = senhaConexao;
+                    conexoes.CONCUSRART = usuarioArtsystem;
+                    conexoes.CONCSENART = senhaArtsystem;
+                    conexoes.CONCDESC = observacoes;
+                    conexoes.CONCCLI = recuperaClientePorNome;
+                    conexoes.CONNIDCLI = _Id;
+                    ConexoesProfile profile = new ConexoesProfile();
+                    profile.Executar(conexoesDal, conexoes);
+                }
+            }
+            else
+            {
+                Conexoes conexoes = new Conexoes();
+                conexoes.CONCTIPCO = tipoConexao;
+                conexoes.CONCIPCON = enderecos;
+                conexoes.CONCTIP = tipo;
+                conexoes.CONCUSRTS = usrConexao;
+                conexoes.CONCSENTS = senhaConexao;
+                conexoes.CONCUSRART = usuarioArtsystem;
+                conexoes.CONCSENART = senhaArtsystem;
+                conexoes.CONCDESC = observacoes;
+                conexoes.CONCCLI = recuperaClientePorNome;
+                conexoes.CONNIDCLI = _Id;
+                ConexoesProfile profile = new ConexoesProfile();
+                profile.Executar(conexoesDal, conexoes);
+            }
         }
 
         private void Frm_CadastroConexao_Load(object sender, EventArgs e)

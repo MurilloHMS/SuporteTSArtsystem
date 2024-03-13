@@ -13,5 +13,9 @@ namespace WinFormsApp1.Models.Profiles
         {
             conexoesDAL.AddToDB(conexoes);
         }
+        public void Deletar(DAL<Conexoes> conexoesDAL, Conexoes conexoes)
+        {
+            conexoesDAL.DeleteDB(conexoes);
+        }
     }
 }
