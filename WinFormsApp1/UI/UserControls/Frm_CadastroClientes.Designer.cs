@@ -32,8 +32,6 @@
             TXB_ID = new TextBox();
             groupBox1 = new GroupBox();
             button4 = new Button();
-            label5 = new Label();
-            TXB_Observacao = new TextBox();
             MTXB_Cnpj = new MaskedTextBox();
             label4 = new Label();
             label3 = new Label();
@@ -64,11 +62,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(28, 30);
+            label1.Location = new Point(15, 30);
             label1.Name = "label1";
-            label1.Size = new Size(18, 15);
+            label1.Size = new Size(46, 15);
             label1.TabIndex = 0;
-            label1.Text = "ID";
+            label1.Text = "Código";
             // 
             // TXB_ID
             // 
@@ -80,8 +78,6 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(TXB_Observacao);
             groupBox1.Controls.Add(MTXB_Cnpj);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
@@ -106,27 +102,6 @@
             button4.Text = "...";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(18, 111);
-            label5.Name = "label5";
-            label5.Size = new Size(74, 15);
-            label5.TabIndex = 9;
-            label5.Text = "Observações";
-            // 
-            // TXB_Observacao
-            // 
-            TXB_Observacao.AcceptsReturn = true;
-            TXB_Observacao.AcceptsTab = true;
-            TXB_Observacao.HideSelection = false;
-            TXB_Observacao.Location = new Point(15, 136);
-            TXB_Observacao.MaxLength = 1000;
-            TXB_Observacao.Multiline = true;
-            TXB_Observacao.Name = "TXB_Observacao";
-            TXB_Observacao.Size = new Size(744, 37);
-            TXB_Observacao.TabIndex = 8;
             // 
             // MTXB_Cnpj
             // 
@@ -353,8 +328,6 @@
         private Label label3;
         private TextBox TXB_Apelido;
         private MaskedTextBox MTXB_Cnpj;
-        private Label label5;
-        private TextBox TXB_Observacao;
         private GroupBox groupBox2;
         private Button button4;
         private TabControl tabControl1;

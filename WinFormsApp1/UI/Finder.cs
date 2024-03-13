@@ -26,7 +26,7 @@ namespace WinFormsApp1.UI
         private void PreencherLista()
         {
             var context = new SuporteContext();
-            var clienteDal = new DAL<Cliente>(context);
+            var clienteDal = new DAL<ASENTENT>(context);
 
             
             LB_Finder.Items.Clear();
@@ -34,8 +34,8 @@ namespace WinFormsApp1.UI
             foreach (var cliente in retornoTodosOsClientes)
             {
                 ItemBox x = new ItemBox();
-                x.Id = cliente.CLINID_CLI;
-                x.Nome = cliente.CLICRZS;
+                x.Id = cliente.ENTNID_ENT;
+                x.Nome = cliente.ENTCNOMENT;
                 LB_Finder.Items.Add(x);
             }
         }

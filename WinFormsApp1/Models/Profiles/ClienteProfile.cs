@@ -9,7 +9,7 @@ namespace WinFormsApp1.Models.Profiles
 {
     internal class ClienteProfile
     {
-        public void Executar (DAL<Cliente> clienteDAL, Cliente cliente)
+        public void Executar (DAL<ASENTENT> clienteDAL, ASENTENT cliente)
         {
             clienteDAL.AddToDB(cliente);
         }

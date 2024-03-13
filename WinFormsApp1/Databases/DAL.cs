@@ -14,7 +14,7 @@ namespace WinFormsApp1.Databases
         {
             this._context = context;
         }
-
+        
         public IEnumerable<T> GetAll() 
         {
             return _context.Set<T>().ToList();

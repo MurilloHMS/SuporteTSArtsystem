@@ -34,19 +34,18 @@ namespace WinFormsApp1.UI.UserControls
             finder.ShowDialog();
 
             var context = new SuporteContext();
-            var clienteDal = new DAL<Cliente>(context);
+            var clienteDal = new DAL<ASENTENT>(context);
             var conexoesDal = new DAL<Conexoes>(context);
             var id = finder.idSelect;
-            var recuperaClientePorNome = clienteDal.GetFor(c => c.CLINID_CLI.Equals(id));
+            var recuperaClientePorNome = clienteDal.GetFor(c => c.ENTNID_ENT.Equals(id));
 
             if (finder.DialogResult == DialogResult.OK)
             {
-                var idCliente = recuperaClientePorNome.CLINID_CLI;
+                var idCliente = recuperaClientePorNome.ENTNID_ENT;
                 TXB_ID.Text = Convert.ToString(idCliente);
-                TXB_Nome.Text = recuperaClientePorNome.CLICRZS;
-                TXB_Apelido.Text = recuperaClientePorNome.CLICAPE;
-                TXB_Observacao.Text = recuperaClientePorNome.CLICDES;
-                MTXB_Cnpj.Text = recuperaClientePorNome.CLICCNPJ;
+                TXB_Nome.Text = recuperaClientePorNome.ENTCNOMENT;
+                TXB_Apelido.Text = recuperaClientePorNome.ENTCAPELID;
+                MTXB_Cnpj.Text = recuperaClientePorNome.ENTCCODCPF;
 
                 var resultado = conexoesDal.listFor(r => r.CONNIDCLI.Equals(idCliente));
                 DGV_ConexoesRemotas.DataSource = resultado;
@@ -55,14 +54,13 @@ namespace WinFormsApp1.UI.UserControls
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente();
-            cliente.CLICRZS = TXB_Nome.Text;
-            cliente.CLICAPE = TXB_Apelido.Text;
-            cliente.CLICCNPJ = MTXB_Cnpj.Text;
-            cliente.CLICDES = TXB_Observacao.Text;
+            ASENTENT cliente = new ASENTENT();
+            cliente.ENTCNOMENT = TXB_Nome.Text;
+            cliente.ENTCAPELID = TXB_Apelido.Text;
+            cliente.ENTCCODCPF = MTXB_Cnpj.Text;
 
             var context = new SuporteContext();
-            var clienteDal = new DAL<Cliente>(context);
+            var clienteDal = new DAL<ASENTENT>(context);
 
             ClienteProfile profile = new ClienteProfile();
             profile.Executar(clienteDal, cliente);

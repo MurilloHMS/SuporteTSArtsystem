@@ -39,9 +39,9 @@ namespace WinFormsApp1.UI
             string observacoes = TXB_Observacoes.Text;
 
             var context = new SuporteContext();
-            var clienteDal = new DAL<Cliente>(context);
+            var clienteDal = new DAL<ASENTENT>(context);
             var conexoesDal = new DAL<Conexoes>(context);
-            var recuperaClientePorNome = clienteDal.GetFor(c => c.CLICRZS.Equals(cliente));
+            var recuperaClientePorNome = clienteDal.GetFor(c => c.ENTCNOMENT.Equals(cliente));
             
             
             List<string> usuarios = new List<string>() {"ART", "ARTSYSTEM", "AS_BXALOGS", "AS_INSTALL" };

@@ -17,5 +17,6 @@ namespace WinFormsApp1.Models.Profiles
         {
             conexoesDAL.DeleteDB(conexoes);
         }
+
     }
 }

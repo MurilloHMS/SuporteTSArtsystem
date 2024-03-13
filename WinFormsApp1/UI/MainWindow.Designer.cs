@@ -30,6 +30,8 @@
         {
             menuStrip1 = new MenuStrip();
             opçõesToolStripMenuItem = new ToolStripMenuItem();
+            configuraçõesToolStripMenuItem = new ToolStripMenuItem();
+            geralToolStripMenuItem = new ToolStripMenuItem();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
             cadastroDeClientesToolStripMenuItem = new ToolStripMenuItem();
             cadastroDeConexõesToolStripMenuItem = new ToolStripMenuItem();
@@ -44,62 +46,75 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { opçõesToolStripMenuItem, cadastrosToolStripMenuItem, ajudaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(7, 3, 0, 3);
-            menuStrip1.Size = new Size(943, 30);
+            menuStrip1.Size = new Size(825, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
             // opçõesToolStripMenuItem
             // 
+            opçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { configuraçõesToolStripMenuItem });
             opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
-            opçõesToolStripMenuItem.Size = new Size(73, 24);
+            opçõesToolStripMenuItem.Size = new Size(59, 20);
             opçõesToolStripMenuItem.Text = "Opções";
+            // 
+            // configuraçõesToolStripMenuItem
+            // 
+            configuraçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { geralToolStripMenuItem });
+            configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
+            configuraçõesToolStripMenuItem.Size = new Size(180, 22);
+            configuraçõesToolStripMenuItem.Text = "Configurações";
+            // 
+            // geralToolStripMenuItem
+            // 
+            geralToolStripMenuItem.Name = "geralToolStripMenuItem";
+            geralToolStripMenuItem.Size = new Size(180, 22);
+            geralToolStripMenuItem.Text = "Geral";
+            geralToolStripMenuItem.Click += geralToolStripMenuItem_Click;
             // 
             // cadastrosToolStripMenuItem
             // 
             cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastroDeClientesToolStripMenuItem, cadastroDeConexõesToolStripMenuItem });
             cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            cadastrosToolStripMenuItem.Size = new Size(88, 24);
+            cadastrosToolStripMenuItem.Size = new Size(71, 20);
             cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
             // cadastroDeClientesToolStripMenuItem
             // 
             cadastroDeClientesToolStripMenuItem.Name = "cadastroDeClientesToolStripMenuItem";
-            cadastroDeClientesToolStripMenuItem.Size = new Size(240, 26);
+            cadastroDeClientesToolStripMenuItem.Size = new Size(192, 22);
             cadastroDeClientesToolStripMenuItem.Text = "Cadastro de Clientes";
             cadastroDeClientesToolStripMenuItem.Click += cadastroDeClientesToolStripMenuItem_Click;
             // 
             // cadastroDeConexõesToolStripMenuItem
             // 
             cadastroDeConexõesToolStripMenuItem.Name = "cadastroDeConexõesToolStripMenuItem";
-            cadastroDeConexõesToolStripMenuItem.Size = new Size(240, 26);
+            cadastroDeConexõesToolStripMenuItem.Size = new Size(192, 22);
             cadastroDeConexõesToolStripMenuItem.Text = "Cadastro de Conexões";
             // 
             // ajudaToolStripMenuItem
             // 
             ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            ajudaToolStripMenuItem.Size = new Size(62, 24);
+            ajudaToolStripMenuItem.Size = new Size(50, 20);
             ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // TB_MainWindow
             // 
             TB_MainWindow.Dock = DockStyle.Fill;
-            TB_MainWindow.Location = new Point(0, 30);
-            TB_MainWindow.Margin = new Padding(3, 4, 3, 4);
+            TB_MainWindow.Location = new Point(0, 24);
             TB_MainWindow.Name = "TB_MainWindow";
             TB_MainWindow.SelectedIndex = 0;
-            TB_MainWindow.Size = new Size(943, 791);
+            TB_MainWindow.Size = new Size(825, 592);
             TB_MainWindow.TabIndex = 1;
+            TB_MainWindow.MouseDown += TB_MainWindow_MouseDown;
             // 
             // MainWindow
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(943, 821);
+            ClientSize = new Size(825, 616);
             Controls.Add(TB_MainWindow);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "MainWindow";
             Text = "ArtSystem Suporte";
             Load += MainWindow_Load;
@@ -118,5 +133,7 @@
         private ToolStripMenuItem cadastroDeConexõesToolStripMenuItem;
         private ToolStripMenuItem ajudaToolStripMenuItem;
         private TabControl TB_MainWindow;
+        private ToolStripMenuItem configuraçõesToolStripMenuItem;
+        private ToolStripMenuItem geralToolStripMenuItem;
     }
 }
