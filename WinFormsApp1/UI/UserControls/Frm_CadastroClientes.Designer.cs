@@ -48,9 +48,6 @@
             button8 = new Button();
             button10 = new Button();
             LSTB_Contatos = new ListBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -209,7 +206,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(384, 203);
+            button5.Location = new Point(385, 202);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
             button5.TabIndex = 14;
@@ -218,7 +215,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(304, 202);
+            button7.Location = new Point(304, 200);
             button7.Name = "button7";
             button7.Size = new Size(75, 23);
             button7.TabIndex = 12;
@@ -268,41 +265,10 @@
             LSTB_Contatos.Size = new Size(730, 184);
             LSTB_Contatos.TabIndex = 12;
             // 
-            // button1
-            // 
-            button1.Location = new Point(284, 532);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Inserir";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(380, 532);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 5;
-            button2.Text = "Alterar";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(473, 532);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 6;
-            button3.Text = "Cancelar";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // Frm_CadastroClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "Frm_CadastroClientes";
@@ -338,9 +304,6 @@
         private Button button7;
         private Button button8;
         private Button button10;
-        private Button button1;
-        private Button button2;
-        private Button button3;
         private DataGridView DGV_ConexoesRemotas;
     }
 }

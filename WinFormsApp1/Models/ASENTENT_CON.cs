@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1.Models
 {
-    public class Conexoes
+    public class ASENTENT_CON
     {
         [Key]
         public int CONNID_CON { get; set; }

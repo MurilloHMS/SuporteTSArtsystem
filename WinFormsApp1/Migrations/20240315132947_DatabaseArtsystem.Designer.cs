@@ -12,8 +12,8 @@ using WinFormsApp1.Databases;
 namespace WinFormsApp1.Migrations
 {
     [DbContext(typeof(SuporteContext))]
-    [Migration("20240312195150_AlterarIdCliente")]
-    partial class AlterarIdCliente
+    [Migration("20240315132947_DatabaseArtsystem")]
+    partial class DatabaseArtsystem
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,45 +28,65 @@ namespace WinFormsApp1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WinFormsApp1.Models.Cliente", b =>
+            modelBuilder.Entity("WinFormsApp1.Models.ASENTENT", b =>
                 {
-                    b.Property<int>("CLINID_CLI")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("ENTNID_ENT")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CLINID_CLI"));
+                    b.Property<int>("ENTNID_CEP")
+                        .HasColumnType("int");
 
-                    b.Property<string>("CLICAPE")
+                    b.Property<string>("ENTCAPELID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ENTCCODCPF")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CLICCNPJ")
+                    b.Property<string>("ENTCCOD_RG")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ENTCENDCOM")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ENTCE_MAIL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ENTCNOMENT")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CLICDES")
+                    b.Property<string>("ENTCTIPPES")
                         .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<string>("ENTCUSUALT")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("CLICRZS")
-                        .IsRequired()
+                    b.Property<string>("ENTCUSUCAD")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("CLINID_CLI");
+                    b.Property<DateTime?>("ENTDDATALT")
+                        .HasColumnType("datetime2");
 
-                    b.ToTable("Clientes");
+                    b.Property<DateTime?>("ENTDDATCAD")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ENTNENDNUM")
+                        .HasColumnType("int");
+
+                    b.HasKey("ENTNID_ENT", "ENTNID_CEP");
+
+                    b.ToTable("ASENTENT");
                 });
 
-            modelBuilder.Entity("WinFormsApp1.Models.Conexoes", b =>
+            modelBuilder.Entity("WinFormsApp1.Models.ASENTENT_CON", b =>
                 {
                     b.Property<int>("CONNID_CON")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CONNID_CON"));
-
-                    b.Property<int?>("CONCCLICLINID_CLI")
-                        .HasColumnType("int");
 
                     b.Property<string>("CONCDESC")
                         .IsRequired()
@@ -105,23 +125,7 @@ namespace WinFormsApp1.Migrations
 
                     b.HasKey("CONNID_CON");
 
-                    b.HasIndex("CONCCLICLINID_CLI");
-
-                    b.ToTable("Conexoes");
-                });
-
-            modelBuilder.Entity("WinFormsApp1.Models.Conexoes", b =>
-                {
-                    b.HasOne("WinFormsApp1.Models.Cliente", "CONCCLI")
-                        .WithMany("Conexao")
-                        .HasForeignKey("CONCCLICLINID_CLI");
-
-                    b.Navigation("CONCCLI");
-                });
-
-            modelBuilder.Entity("WinFormsApp1.Models.Cliente", b =>
-                {
-                    b.Navigation("Conexao");
+                    b.ToTable("ASENTENT_CON");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +12,18 @@ namespace WinFormsApp1.Databases
 {
     internal class SuporteContext : DbContext
     {
-        //private string _connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=AS_CAD;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
-        private string _connectionString = @"Data Source=DESKTOP-TC9U938\CONTROLEFP;Initial Catalog=AS_CAD;User ID=sa;Password=1525;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+
+        Settings setup = new Settings();
+
+        private string _connectionString;
+        //private string _connectionString = @"Data Source=192.168.18.100,1431;Initial Catalog=AS_CAD;User ID=sa;Password=1s860t77r@;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
         public DbSet<ASENTENT> ASENTENT { get; set; }
-        public DbSet<Conexoes> Conexoes { get; set; }
+        public DbSet<ASENTENT_CON> ASENTENT_CON { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            Settings setup = new Settings();
+            _connectionString = setup.ConnectionString;
             optionsBuilder
                 .UseSqlServer(_connectionString)
                 .UseLazyLoadingProxies();

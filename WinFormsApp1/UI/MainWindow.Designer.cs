@@ -34,7 +34,6 @@
             geralToolStripMenuItem = new ToolStripMenuItem();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
             cadastroDeClientesToolStripMenuItem = new ToolStripMenuItem();
-            cadastroDeConexõesToolStripMenuItem = new ToolStripMenuItem();
             ajudaToolStripMenuItem = new ToolStripMenuItem();
             TB_MainWindow = new TabControl();
             menuStrip1.SuspendLayout();
@@ -73,7 +72,7 @@
             // 
             // cadastrosToolStripMenuItem
             // 
-            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastroDeClientesToolStripMenuItem, cadastroDeConexõesToolStripMenuItem });
+            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cadastroDeClientesToolStripMenuItem });
             cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             cadastrosToolStripMenuItem.Size = new Size(71, 20);
             cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -82,14 +81,8 @@
             // 
             cadastroDeClientesToolStripMenuItem.Name = "cadastroDeClientesToolStripMenuItem";
             cadastroDeClientesToolStripMenuItem.Size = new Size(192, 22);
-            cadastroDeClientesToolStripMenuItem.Text = "Cadastro de Clientes";
+            cadastroDeClientesToolStripMenuItem.Text = "Cadastro de Conexões";
             cadastroDeClientesToolStripMenuItem.Click += cadastroDeClientesToolStripMenuItem_Click;
-            // 
-            // cadastroDeConexõesToolStripMenuItem
-            // 
-            cadastroDeConexõesToolStripMenuItem.Name = "cadastroDeConexõesToolStripMenuItem";
-            cadastroDeConexõesToolStripMenuItem.Size = new Size(192, 22);
-            cadastroDeConexõesToolStripMenuItem.Text = "Cadastro de Conexões";
             // 
             // ajudaToolStripMenuItem
             // 
@@ -115,6 +108,7 @@
             Controls.Add(TB_MainWindow);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            MaximizeBox = false;
             Name = "MainWindow";
             Text = "ArtSystem Suporte";
             Load += MainWindow_Load;
@@ -130,7 +124,6 @@
         private ToolStripMenuItem opçõesToolStripMenuItem;
         private ToolStripMenuItem cadastrosToolStripMenuItem;
         private ToolStripMenuItem cadastroDeClientesToolStripMenuItem;
-        private ToolStripMenuItem cadastroDeConexõesToolStripMenuItem;
         private ToolStripMenuItem ajudaToolStripMenuItem;
         private TabControl TB_MainWindow;
         private ToolStripMenuItem configuraçõesToolStripMenuItem;

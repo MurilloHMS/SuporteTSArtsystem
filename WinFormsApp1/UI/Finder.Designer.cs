@@ -30,11 +30,13 @@
         {
             groupBox1 = new GroupBox();
             LB_Finder = new ListBox();
+            TXT_Filtro = new TextBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(TXT_Filtro);
             groupBox1.Controls.Add(LB_Finder);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
@@ -45,15 +47,21 @@
             // 
             // LB_Finder
             // 
-            LB_Finder.Dock = DockStyle.Fill;
             LB_Finder.FormattingEnabled = true;
             LB_Finder.ItemHeight = 15;
-            LB_Finder.Location = new Point(3, 19);
+            LB_Finder.Location = new Point(3, 49);
             LB_Finder.Name = "LB_Finder";
-            LB_Finder.Size = new Size(415, 473);
+            LB_Finder.Size = new Size(415, 439);
             LB_Finder.TabIndex = 0;
             LB_Finder.SelectedIndexChanged += LB_Finder_SelectedIndexChanged;
             LB_Finder.DoubleClick += LB_Finder_DoubleClick;
+            // 
+            // TXT_Filtro
+            // 
+            TXT_Filtro.Location = new Point(6, 22);
+            TXT_Filtro.Name = "TXT_Filtro";
+            TXT_Filtro.Size = new Size(397, 23);
+            TXT_Filtro.TabIndex = 1;
             // 
             // Finder
             // 
@@ -64,6 +72,7 @@
             Name = "Finder";
             Text = "Finder";
             groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -71,5 +80,6 @@
 
         private GroupBox groupBox1;
         private ListBox LB_Finder;
+        private TextBox TXT_Filtro;
     }
 }

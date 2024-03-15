@@ -77,7 +77,7 @@ namespace WinFormsApp1.Migrations
                     b.ToTable("ASENTENT");
                 });
 
-            modelBuilder.Entity("WinFormsApp1.Models.Conexoes", b =>
+            modelBuilder.Entity("WinFormsApp1.Models.ASENTENT_CON", b =>
                 {
                     b.Property<int>("CONNID_CON")
                         .ValueGeneratedOnAdd()
@@ -122,7 +122,7 @@ namespace WinFormsApp1.Migrations
 
                     b.HasKey("CONNID_CON");
 
-                    b.ToTable("Conexoes");
+                    b.ToTable("ASENTENT_CON");
                 });
 #pragma warning restore 612, 618
         }

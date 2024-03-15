@@ -28,20 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Configuracoes));
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
-            textBox2 = new TextBox();
-            label2 = new Label();
             textBox3 = new TextBox();
             label3 = new Label();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            TXB_EnderecoSql = new TextBox();
+            label1 = new Label();
             groupBox2 = new GroupBox();
             button2 = new Button();
-            textBox4 = new TextBox();
+            TXT_enderecoAnydesk = new TextBox();
             label4 = new Label();
+            toolStrip1 = new ToolStrip();
+            salvarToolStripButton = new ToolStripButton();
+            toolStripSeparator = new ToolStripSeparator();
+            ajudaToolStripButton = new ToolStripButton();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
@@ -50,8 +55,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(TXB_EnderecoSql);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(29, 50);
             groupBox1.Name = "groupBox1";
@@ -59,47 +63,6 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Configurações SQL";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(17, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(56, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Endereço";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(17, 51);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(693, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(710, 51);
-            button1.Name = "button1";
-            button1.Size = new Size(31, 23);
-            button1.TabIndex = 2;
-            button1.Text = "...";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(17, 95);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(148, 23);
-            textBox2.TabIndex = 4;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(17, 77);
-            label2.Name = "label2";
-            label2.Size = new Size(47, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Usuário";
             // 
             // textBox3
             // 
@@ -119,10 +82,42 @@
             label3.TabIndex = 5;
             label3.Text = "Senha";
             // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(17, 95);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(148, 23);
+            textBox2.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(17, 77);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Usuário";
+            // 
+            // TXB_EnderecoSql
+            // 
+            TXB_EnderecoSql.Location = new Point(17, 51);
+            TXB_EnderecoSql.Name = "TXB_EnderecoSql";
+            TXB_EnderecoSql.Size = new Size(693, 23);
+            TXB_EnderecoSql.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(17, 33);
+            label1.Name = "label1";
+            label1.Size = new Size(56, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Endereço";
+            // 
             // groupBox2
             // 
             groupBox2.Controls.Add(button2);
-            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(TXT_enderecoAnydesk);
             groupBox2.Controls.Add(label4);
             groupBox2.Location = new Point(29, 261);
             groupBox2.Name = "groupBox2";
@@ -139,13 +134,14 @@
             button2.TabIndex = 5;
             button2.Text = "...";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
-            // textBox4
+            // TXT_enderecoAnydesk
             // 
-            textBox4.Location = new Point(11, 48);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(693, 23);
-            textBox4.TabIndex = 4;
+            TXT_enderecoAnydesk.Location = new Point(11, 48);
+            TXT_enderecoAnydesk.Name = "TXT_enderecoAnydesk";
+            TXT_enderecoAnydesk.Size = new Size(693, 23);
+            TXT_enderecoAnydesk.TabIndex = 4;
             // 
             // label4
             // 
@@ -156,19 +152,57 @@
             label4.TabIndex = 3;
             label4.Text = "Endereço";
             // 
+            // toolStrip1
+            // 
+            toolStrip1.Items.AddRange(new ToolStripItem[] { salvarToolStripButton, toolStripSeparator, ajudaToolStripButton });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(821, 25);
+            toolStrip1.TabIndex = 2;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // salvarToolStripButton
+            // 
+            salvarToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            salvarToolStripButton.Image = (Image)resources.GetObject("salvarToolStripButton.Image");
+            salvarToolStripButton.ImageTransparentColor = Color.Magenta;
+            salvarToolStripButton.Name = "salvarToolStripButton";
+            salvarToolStripButton.Size = new Size(23, 22);
+            salvarToolStripButton.Text = "&Salvar";
+            salvarToolStripButton.Click += salvarToolStripButton_Click;
+            // 
+            // toolStripSeparator
+            // 
+            toolStripSeparator.Name = "toolStripSeparator";
+            toolStripSeparator.Size = new Size(6, 25);
+            // 
+            // ajudaToolStripButton
+            // 
+            ajudaToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            ajudaToolStripButton.Image = (Image)resources.GetObject("ajudaToolStripButton.Image");
+            ajudaToolStripButton.ImageTransparentColor = Color.Magenta;
+            ajudaToolStripButton.Name = "ajudaToolStripButton";
+            ajudaToolStripButton.Size = new Size(23, 22);
+            ajudaToolStripButton.Text = "Aju&da";
+            // 
             // Frm_Configuracoes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(toolStrip1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "Frm_Configuracoes";
             Size = new Size(821, 574);
+            Load += Frm_Configuracoes_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -178,12 +212,15 @@
         private Label label3;
         private TextBox textBox2;
         private Label label2;
-        private Button button1;
-        private TextBox textBox1;
+        private TextBox TXB_EnderecoSql;
         private Label label1;
         private GroupBox groupBox2;
         private Button button2;
-        private TextBox textBox4;
+        private TextBox TXT_enderecoAnydesk;
         private Label label4;
+        private ToolStrip toolStrip1;
+        private ToolStripButton salvarToolStripButton;
+        private ToolStripSeparator toolStripSeparator;
+        private ToolStripButton ajudaToolStripButton;
     }
 }

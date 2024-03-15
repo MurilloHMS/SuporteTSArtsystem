@@ -46,9 +46,9 @@
             TXB_SenhaArtsystem = new TextBox();
             label9 = new Label();
             TXB_Observacoes = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            BTN_Inserir = new Button();
+            BTN_Alterar = new Button();
+            Btn_Cancelar = new Button();
             label10 = new Label();
             CB_UsrConexaoRemota = new ComboBox();
             SuspendLayout();
@@ -67,6 +67,7 @@
             TXB_IDConexao.Location = new Point(22, 24);
             TXB_IDConexao.Margin = new Padding(3, 2, 3, 2);
             TXB_IDConexao.Name = "TXB_IDConexao";
+            TXB_IDConexao.ReadOnly = true;
             TXB_IDConexao.Size = new Size(38, 23);
             TXB_IDConexao.TabIndex = 1;
             // 
@@ -159,8 +160,10 @@
             TXB_SenhaConexaoRemota.Location = new Point(22, 189);
             TXB_SenhaConexaoRemota.Margin = new Padding(3, 2, 3, 2);
             TXB_SenhaConexaoRemota.Name = "TXB_SenhaConexaoRemota";
+            TXB_SenhaConexaoRemota.PasswordChar = '*';
             TXB_SenhaConexaoRemota.Size = new Size(180, 23);
             TXB_SenhaConexaoRemota.TabIndex = 10;
+            TXB_SenhaConexaoRemota.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -214,40 +217,42 @@
             TXB_Observacoes.Size = new Size(441, 50);
             TXB_Observacoes.TabIndex = 16;
             // 
-            // button1
+            // BTN_Inserir
             // 
-            button1.Cursor = Cursors.Hand;
-            button1.Location = new Point(119, 338);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(82, 22);
-            button1.TabIndex = 18;
-            button1.Text = "Inserir";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            BTN_Inserir.Cursor = Cursors.Hand;
+            BTN_Inserir.Location = new Point(119, 338);
+            BTN_Inserir.Margin = new Padding(3, 2, 3, 2);
+            BTN_Inserir.Name = "BTN_Inserir";
+            BTN_Inserir.Size = new Size(82, 22);
+            BTN_Inserir.TabIndex = 18;
+            BTN_Inserir.Text = "Inserir";
+            BTN_Inserir.UseVisualStyleBackColor = true;
+            BTN_Inserir.Click += button1_Click;
             // 
-            // button2
+            // BTN_Alterar
             // 
-            button2.Cursor = Cursors.Hand;
-            button2.Enabled = false;
-            button2.Location = new Point(206, 338);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(82, 22);
-            button2.TabIndex = 19;
-            button2.Text = "Alterar";
-            button2.UseVisualStyleBackColor = true;
+            BTN_Alterar.Cursor = Cursors.Hand;
+            BTN_Alterar.Enabled = false;
+            BTN_Alterar.Location = new Point(206, 338);
+            BTN_Alterar.Margin = new Padding(3, 2, 3, 2);
+            BTN_Alterar.Name = "BTN_Alterar";
+            BTN_Alterar.Size = new Size(82, 22);
+            BTN_Alterar.TabIndex = 19;
+            BTN_Alterar.Text = "Alterar";
+            BTN_Alterar.UseVisualStyleBackColor = true;
+            BTN_Alterar.Click += BTN_Alterar_Click;
             // 
-            // button3
+            // Btn_Cancelar
             // 
-            button3.Cursor = Cursors.Hand;
-            button3.Location = new Point(294, 338);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(82, 22);
-            button3.TabIndex = 20;
-            button3.Text = "Cancelar";
-            button3.UseVisualStyleBackColor = true;
+            Btn_Cancelar.Cursor = Cursors.Hand;
+            Btn_Cancelar.Location = new Point(294, 338);
+            Btn_Cancelar.Margin = new Padding(3, 2, 3, 2);
+            Btn_Cancelar.Name = "Btn_Cancelar";
+            Btn_Cancelar.Size = new Size(82, 22);
+            Btn_Cancelar.TabIndex = 20;
+            Btn_Cancelar.Text = "Cancelar";
+            Btn_Cancelar.UseVisualStyleBackColor = true;
+            Btn_Cancelar.Click += Btn_Cancelar_Click;
             // 
             // label10
             // 
@@ -276,9 +281,9 @@
             ClientSize = new Size(486, 383);
             Controls.Add(CB_UsrConexaoRemota);
             Controls.Add(label10);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(Btn_Cancelar);
+            Controls.Add(BTN_Alterar);
+            Controls.Add(BTN_Inserir);
             Controls.Add(label9);
             Controls.Add(TXB_Observacoes);
             Controls.Add(label8);
@@ -325,9 +330,9 @@
         private TextBox TXB_SenhaArtsystem;
         private Label label9;
         private TextBox TXB_Observacoes;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button BTN_Inserir;
+        private Button BTN_Alterar;
+        private Button Btn_Cancelar;
         private Label label10;
         private ComboBox CB_UsrConexaoRemota;
     }

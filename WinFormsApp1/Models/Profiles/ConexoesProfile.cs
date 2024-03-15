@@ -9,13 +9,17 @@ namespace WinFormsApp1.Models.Profiles
 {
     internal class ConexoesProfile
     {
-        public void Executar(DAL<Conexoes> conexoesDAL, Conexoes conexoes)
+        public void Executar(DAL<ASENTENT_CON> conexoesDAL, ASENTENT_CON conexoes)
         {
             conexoesDAL.AddToDB(conexoes);
         }
-        public void Deletar(DAL<Conexoes> conexoesDAL, Conexoes conexoes)
+        public void Deletar(DAL<ASENTENT_CON> conexoesDAL, ASENTENT_CON conexoes)
         {
             conexoesDAL.DeleteDB(conexoes);
+        }
+        public void Atualizar(DAL<ASENTENT_CON> conexoesDAL, ASENTENT_CON conexoes)
+        {
+            conexoesDAL.UpdateDB(conexoes);
         }
 
     }

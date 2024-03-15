@@ -35,7 +35,7 @@ namespace WinFormsApp1.UI.UserControls
 
             var context = new SuporteContext();
             var clienteDal = new DAL<ASENTENT>(context);
-            var conexoesDal = new DAL<Conexoes>(context);
+            var conexoesDal = new DAL<ASENTENT_CON>(context);
             var id = finder.idSelect;
             var recuperaClientePorNome = clienteDal.GetFor(c => c.ENTNID_ENT.Equals(id));
 
@@ -78,7 +78,7 @@ namespace WinFormsApp1.UI.UserControls
             {
                 int idCliente = Convert.ToInt32(TXB_ID.Text);
                 var nomeCliente = TXB_Nome.Text;
-                Frm_CadastroConexao frm = new Frm_CadastroConexao(idCliente, nomeCliente);
+                Frm_CadastroConexao frm = new Frm_CadastroConexao(idCliente, nomeCliente, false);
                 frm.ShowDialog();
             }
 
@@ -95,10 +95,29 @@ namespace WinFormsApp1.UI.UserControls
             {
                 DataGridViewRow row = DGV_ConexoesRemotas.Rows[e.RowIndex];
                 string value = row.Cells[3].Value.ToString();
-
+                string tipoConexao = row.Cells[1].Value.ToString();
+                string username = row.Cells[5].Value.ToString();
                 Process process = new Process();
-                process.StartInfo.FileName = "mstsc.exe";
-                process.StartInfo.Arguments = $"/v: {value}";
+                Settings settings = new Settings(); 
+                string anydesk = settings.Anydesk;
+
+                switch (tipoConexao)
+                {
+                    case "ANYDESK":
+                        process.StartInfo.FileName = anydesk;
+                        process.StartInfo.Arguments = $"{value}";
+                        break;
+                    case "TS":
+                        string rdpFilePath = Path.Combine(Path.GetTempPath(), "remote_connection.rdp");
+                        using (StreamWriter sw = new StreamWriter(rdpFilePath))
+                        {
+                            sw.WriteLine($"full address:s:{value}");
+                            sw.WriteLine($"username:s:{username}");
+                        }
+                        process.StartInfo.FileName = "mstsc.exe";
+                        process.StartInfo.Arguments = $"{rdpFilePath}";
+                        break;
+                }
                 process.Start();
             }
         }
@@ -116,18 +135,35 @@ namespace WinFormsApp1.UI.UserControls
                 if (msg == DialogResult.Yes)
                 {
                     var context = new SuporteContext();
-                    var conexoesDal = new DAL<Conexoes>(context);
+                    var conexoesDal = new DAL<ASENTENT_CON>(context);
 
                     DataGridViewRow selectedRow = DGV_ConexoesRemotas.SelectedRows[0];
 
                     
                     string ids = selectedRow.Cells[0].Value.ToString();
                     int id = int.Parse(ids);
-                    Conexoes resultado = conexoesDal.GetFor(c => c.CONNID_CON.Equals(id));
+                    ASENTENT_CON resultado = conexoesDal.GetFor(c => c.CONNID_CON.Equals(id));
                     conexoesDal.DeleteDB(resultado);
 
-                    
+                }
+            }
 
+            if (e.KeyCode == Keys.Enter) 
+            {
+                DialogResult msg = MessageBox.Show("Deseja alterar a Conexão selecionada? ", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (msg == DialogResult.Yes)
+                {
+                    var context = new SuporteContext();
+                    var conexoesDal = new DAL<ASENTENT_CON>(context);
+
+                    DataGridViewRow selectedRow = DGV_ConexoesRemotas.SelectedRows[0];
+
+
+                    string ids = selectedRow.Cells[0].Value.ToString();
+                    var nomeCliente = TXB_Nome.Text;
+                    int id = int.Parse(ids);
+                    Frm_CadastroConexao frm = new Frm_CadastroConexao(id, nomeCliente, true);
+                    frm.ShowDialog();
 
                 }
             }
