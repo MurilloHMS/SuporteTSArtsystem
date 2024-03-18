@@ -304,6 +304,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Frm_CadastroConexao";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro Conexões";
             Load += Frm_CadastroConexao_Load;
             ResumeLayout(false);

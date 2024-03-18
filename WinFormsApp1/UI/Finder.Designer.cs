@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            LB_Finder = new ListBox();
             TXT_Filtro = new TextBox();
+            LB_Finder = new ListBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -45,6 +45,13 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Busca";
             // 
+            // TXT_Filtro
+            // 
+            TXT_Filtro.Location = new Point(6, 22);
+            TXT_Filtro.Name = "TXT_Filtro";
+            TXT_Filtro.Size = new Size(397, 23);
+            TXT_Filtro.TabIndex = 0;
+            // 
             // LB_Finder
             // 
             LB_Finder.FormattingEnabled = true;
@@ -52,16 +59,9 @@
             LB_Finder.Location = new Point(3, 49);
             LB_Finder.Name = "LB_Finder";
             LB_Finder.Size = new Size(415, 439);
-            LB_Finder.TabIndex = 0;
+            LB_Finder.TabIndex = 1;
             LB_Finder.SelectedIndexChanged += LB_Finder_SelectedIndexChanged;
             LB_Finder.DoubleClick += LB_Finder_DoubleClick;
-            // 
-            // TXT_Filtro
-            // 
-            TXT_Filtro.Location = new Point(6, 22);
-            TXT_Filtro.Name = "TXT_Filtro";
-            TXT_Filtro.Size = new Size(397, 23);
-            TXT_Filtro.TabIndex = 1;
             // 
             // Finder
             // 
@@ -70,6 +70,7 @@
             ClientSize = new Size(445, 519);
             Controls.Add(groupBox1);
             Name = "Finder";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Finder";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

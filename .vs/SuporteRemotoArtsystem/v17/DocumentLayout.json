@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "A:\\SuporteTSArtsystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\ui\\finder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\finder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\winformsapp1\\ui\\finder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|solutionrelative:winformsapp1\\ui\\finder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\ui\\finder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\finder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|a:\\suportetsartsystem\\winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|solutionrelative:winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\ui\\usercontrols\\frm_cadastroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\usercontrols\\frm_cadastroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\winformsapp1\\ui\\finder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|solutionrelative:winformsapp1\\ui\\finder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|solutionrelative:winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\databases\\suportecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\databases\\suportecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\winformsapp1\\ui\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|solutionrelative:winformsapp1\\ui\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\winformsapp1\\ui\\usercontrols\\frm_configuracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|solutionrelative:winformsapp1\\ui\\usercontrols\\frm_configuracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\models\\profiles\\conexoesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\models\\profiles\\conexoesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\databases\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\databases\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\ui\\usercontrols\\frm_cadastroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\ui\\usercontrols\\frm_cadastroclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|a:\\suportetsartsystem\\winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\winformsapp1\\ui\\usercontrols\\frm_configuracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|WinFormsApp1\\SuporteArtSystem.csproj|solutionrelative:winformsapp1\\ui\\usercontrols\\frm_configuracoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 193,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,117 +50,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "MainWindow.cs [Projeto]",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\MainWindow.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\MainWindow.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\MainWindow.cs [Projeto]",
+              "RelativeToolTip": "WinFormsApp1\\UI\\MainWindow.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:37:21.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Finder.cs",
               "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Finder.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\UI\\Finder.cs",
               "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Finder.cs",
               "RelativeToolTip": "WinFormsApp1\\UI\\Finder.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAgwCoAAAANAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T19:42:31.488Z",
+              "WhenOpened": "2024-03-18T14:25:40.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Finder.cs [Projeto]",
               "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Finder.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\UI\\Finder.cs",
               "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Finder.cs [Projeto]",
               "RelativeToolTip": "WinFormsApp1\\UI\\Finder.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T19:42:27.445Z",
+              "WhenOpened": "2024-03-18T14:23:19.414Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Frm_CadastroClientes.cs [Projeto]",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs [Projeto]",
-              "RelativeToolTip": "WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T19:42:23.189Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\Program.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Program.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\Program.cs",
-              "RelativeToolTip": "WinFormsApp1\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T19:39:11.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DAL.cs",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\Databases\\DAL.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Databases\\DAL.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\Databases\\DAL.cs",
-              "RelativeToolTip": "WinFormsApp1\\Databases\\DAL.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAswDIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T19:10:37.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConexoesProfile.cs",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\Models\\Profiles\\ConexoesProfile.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Models\\Profiles\\ConexoesProfile.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\Models\\Profiles\\ConexoesProfile.cs",
-              "RelativeToolTip": "WinFormsApp1\\Models\\Profiles\\ConexoesProfile.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAjwBUAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T19:08:23.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Frm_CadastroConexao.cs",
               "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
               "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
               "RelativeToolTip": "WinFormsApp1\\UI\\Frm_CadastroConexao.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAIAwwI8AAAAMAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwBUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T18:35:40.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Frm_CadastroClientes.cs",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
-              "RelativeToolTip": "WinFormsApp1\\UI\\UserControls\\Frm_CadastroClientes.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAIA3wKUAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T13:36:38.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SuporteContext.cs",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\Databases\\SuporteContext.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Databases\\SuporteContext.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\Databases\\SuporteContext.cs",
-              "RelativeToolTip": "WinFormsApp1\\Databases\\SuporteContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAD7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T12:28:26.66Z",
+              "WhenOpened": "2024-03-18T14:19:22.476Z",
               "EditorCaption": ""
             },
             {
@@ -184,8 +106,30 @@
               "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\Frm_CadastroConexao.cs [Projeto]",
               "RelativeToolTip": "WinFormsApp1\\UI\\Frm_CadastroConexao.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-13T20:25:29.438Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-03-18T14:19:20.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Frm_Configuracoes.cs",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_Configuracoes.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\UserControls\\Frm_Configuracoes.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_Configuracoes.cs",
+              "RelativeToolTip": "WinFormsApp1\\UI\\UserControls\\Frm_Configuracoes.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAADgv0cAAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:02:23.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Frm_Configuracoes.cs [Projeto]",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_Configuracoes.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\UI\\UserControls\\Frm_Configuracoes.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\WinFormsApp1\\UI\\UserControls\\Frm_Configuracoes.cs [Projeto]",
+              "RelativeToolTip": "WinFormsApp1\\UI\\UserControls\\Frm_Configuracoes.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:01:50.268Z"
             }
           ]
         }

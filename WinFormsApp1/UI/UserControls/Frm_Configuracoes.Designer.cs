@@ -44,6 +44,7 @@
             salvarToolStripButton = new ToolStripButton();
             toolStripSeparator = new ToolStripSeparator();
             ajudaToolStripButton = new ToolStripButton();
+            toolStripButton1 = new ToolStripButton();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             toolStrip1.SuspendLayout();
@@ -154,7 +155,7 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { salvarToolStripButton, toolStripSeparator, ajudaToolStripButton });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { salvarToolStripButton, toolStripButton1, toolStripSeparator, ajudaToolStripButton });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(821, 25);
@@ -184,6 +185,16 @@
             ajudaToolStripButton.Name = "ajudaToolStripButton";
             ajudaToolStripButton.Size = new Size(23, 22);
             ajudaToolStripButton.Text = "Aju&da";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(23, 22);
+            toolStripButton1.Text = "Criar Tabelas";
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // Frm_Configuracoes
             // 
@@ -222,5 +233,6 @@
         private ToolStripButton salvarToolStripButton;
         private ToolStripSeparator toolStripSeparator;
         private ToolStripButton ajudaToolStripButton;
+        private ToolStripButton toolStripButton1;
     }
 }

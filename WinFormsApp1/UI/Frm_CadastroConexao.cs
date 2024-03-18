@@ -1,4 +1,5 @@
 ﻿using Microsoft.Identity.Client;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -69,6 +70,7 @@ namespace WinFormsApp1.UI
             }
 
             BTN_Alterar.Enabled = true;
+            BTN_Inserir.Enabled = false;
 
         }
 
@@ -93,6 +95,7 @@ namespace WinFormsApp1.UI
 
             List<string> usuarios = new List<string>() { "ART", "ARTSYSTEM", "AS_BXALOGS", "AS_INSTALL" };
 
+            string message = string.Empty;
             if (usrConexao.Equals("TODOS"))
             {
                 foreach (string i in usuarios)
@@ -109,6 +112,7 @@ namespace WinFormsApp1.UI
                     conexoes.CONNIDCLI = _Id;
                     ConexoesProfile profile = new ConexoesProfile();
                     profile.Executar(conexoesDal, conexoes);
+                    message = "Conexões criadas com Sucesso!";
                 }
             }
             else
@@ -125,7 +129,10 @@ namespace WinFormsApp1.UI
                 conexoes.CONNIDCLI = _Id;
                 ConexoesProfile profile = new ConexoesProfile();
                 profile.Executar(conexoesDal, conexoes);
+                message = "Conexão criada com sucesso!";
             }
+
+            MessageBox.Show(message, "Insert Connection", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Frm_CadastroConexao_Load(object sender, EventArgs e)
@@ -158,11 +165,13 @@ namespace WinFormsApp1.UI
                 //recuperaConexaoPorNome.CONNIDCLI = recuperaClientePorNome.ENTNID_ENT;
                 conexoesDal.UpdateDB(recuperaConexaoPorNome);
             }
+
+            MessageBox.Show("Dados alterados Com sucesso!", "Alteração de dados", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
-            Preencher(Convert.ToInt32(TXB_IDConexao));
+            this.Close();
         }
     }
 }

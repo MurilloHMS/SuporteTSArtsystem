@@ -284,6 +284,7 @@ A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinForm
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.UI.Frm_CadastroConexao.resources
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.MainWindow.resources
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.UI.UserControls.Frm_CadastroClientes.resources
+A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.UI.UserControls.Frm_Configuracoes.resources
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
@@ -296,4 +297,3 @@ A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\refint\
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.pdb
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\ref\WinFormsApp1.dll
-A:\SuporteTSArtsystem\WinFormsApp1\obj\ArtsystemSuporteTs\net8.0-windows\WinFormsApp1.UI.UserControls.Frm_Configuracoes.resources

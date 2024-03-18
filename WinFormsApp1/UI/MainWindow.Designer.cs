@@ -60,13 +60,13 @@
             // 
             configuraçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { geralToolStripMenuItem });
             configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            configuraçõesToolStripMenuItem.Size = new Size(180, 22);
+            configuraçõesToolStripMenuItem.Size = new Size(151, 22);
             configuraçõesToolStripMenuItem.Text = "Configurações";
             // 
             // geralToolStripMenuItem
             // 
             geralToolStripMenuItem.Name = "geralToolStripMenuItem";
-            geralToolStripMenuItem.Size = new Size(180, 22);
+            geralToolStripMenuItem.Size = new Size(101, 22);
             geralToolStripMenuItem.Text = "Geral";
             geralToolStripMenuItem.Click += geralToolStripMenuItem_Click;
             // 
@@ -110,6 +110,7 @@
             MainMenuStrip = menuStrip1;
             MaximizeBox = false;
             Name = "MainWindow";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ArtSystem Suporte";
             Load += MainWindow_Load;
             menuStrip1.ResumeLayout(false);

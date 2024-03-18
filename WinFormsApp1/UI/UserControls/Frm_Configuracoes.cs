@@ -48,7 +48,8 @@ namespace WinFormsApp1.UI.UserControls
                         TXT_enderecoAnydesk.Text = ofd.FileName;
                     }
                 }
-            }catch(Exception)
+            }
+            catch (Exception)
             {
                 using (OpenFileDialog ofd = new OpenFileDialog())
                 {
@@ -61,7 +62,14 @@ namespace WinFormsApp1.UI.UserControls
                     }
                 }
             }
-            
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            SuporteContext context = new SuporteContext();
+            context.CriarTabelaASENTENT_CON();
+            MessageBox.Show("Tabela de Conexão criada com sucesso!", "SQL", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -22,6 +22,7 @@ namespace WinFormsApp1.UI
             PreencherLista();
             LB_Finder.Sorted = true;
             TXT_Filtro.TextChanged += TXT_Filtro_TextChanged;
+
         }
 
         private void PreencherLista()
@@ -32,12 +33,12 @@ namespace WinFormsApp1.UI
             LB_Finder.Items.Clear();
             _ListaBusca.Clear();
 
-            var retornoTodosOsClientes = clienteDal.GetAll();
+            var retornoTodosOsClientes = clienteDal.GetAll().Where(c => c.ENTCTIPPES.ToString() == "J");
             foreach (var cliente in retornoTodosOsClientes)
             {
                 ItemBox x = new ItemBox();
                 x.Id = cliente.ENTNID_ENT;
-                x.Nome = cliente.ENTCNOMENT;
+                x.Nome = $"{cliente.ENTCNOMENT} => {cliente.ENTCAPELID}";
                 _ListaBusca.Add(x);
                 LB_Finder.Items.Add(x);
             }
@@ -76,5 +77,6 @@ namespace WinFormsApp1.UI
             idSelect = itemSelecionado.Id;
             this.Close();
         }
+
     }
 }
