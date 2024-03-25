@@ -104,8 +104,17 @@ namespace WinFormsApp1.UI.UserControls
                 switch (tipoConexao)
                 {
                     case "ANYDESK":
-                        process.StartInfo.FileName = anydesk;
-                        process.StartInfo.Arguments = $"{value}";
+                        if (!string.IsNullOrEmpty(anydesk))
+                        {
+                            process.StartInfo.FileName = anydesk;
+                            process.StartInfo.Arguments = $"{value}";
+                        }
+                        else
+                        {
+                            MessageBox.Show("Falta configurar o anydesk");
+                            return;
+                        }
+                       
                         break;
                     case "TS":
                         string rdpFilePath = Path.Combine(Path.GetTempPath(), "remote_connection.rdp");

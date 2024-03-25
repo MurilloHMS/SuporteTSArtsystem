@@ -20,6 +20,8 @@ namespace WinFormsApp1.UI
         private int _Id { get; set; }
         private string _Nome { get; set; }
         public string idConexao { get; set; }
+        private ASENTENT_CON conexoes = new ASENTENT_CON();
+
         public Frm_CadastroConexao(int id, string nomeCliente, bool status)
         {
             _Id = id;
@@ -35,9 +37,7 @@ namespace WinFormsApp1.UI
 
         private void Preencher(int id)
         {
-            var context = new SuporteContext();
-            var conexoesDal = new DAL<ASENTENT_CON>(context);
-            ASENTENT_CON resultado = conexoesDal.GetFor(c => c.CONNID_CON.Equals(id));
+            var resultado = conexoes.RetornaConexaoPorID(id);
             TXB_IDConexao.Text = resultado.CONNID_CON.ToString();
             TXB_Endereco.Text = resultado.CONCIPCON;
             TXB_Observacoes.Text = resultado.CONCDESC;
@@ -74,6 +74,11 @@ namespace WinFormsApp1.UI
 
         }
 
+        public void Classes()
+        {
+            
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             var id = TXB_IDConexao.Text;
@@ -86,12 +91,6 @@ namespace WinFormsApp1.UI
             string usuarioArtsystem = TXB_UsrArtsystem.Text;
             string senhaArtsystem = TXB_SenhaArtsystem.Text;
             string observacoes = TXB_Observacoes.Text;
-
-            var context = new SuporteContext();
-            var clienteDal = new DAL<ASENTENT>(context);
-            var conexoesDal = new DAL<ASENTENT_CON>(context);
-            var recuperaClientePorNome = clienteDal.GetFor(c => c.ENTCNOMENT.Equals(cliente));
-
 
             List<string> usuarios = new List<string>() { "ART", "ARTSYSTEM", "AS_BXALOGS", "AS_INSTALL" };
 
@@ -110,8 +109,7 @@ namespace WinFormsApp1.UI
                     conexoes.CONCSENART = senhaArtsystem;
                     conexoes.CONCDESC = observacoes;
                     conexoes.CONNIDCLI = _Id;
-                    ConexoesProfile profile = new ConexoesProfile();
-                    profile.Executar(conexoesDal, conexoes);
+                    conexoes.Incluir();
                     message = "Conexões criadas com Sucesso!";
                 }
             }
@@ -127,8 +125,7 @@ namespace WinFormsApp1.UI
                 conexoes.CONCSENART = senhaArtsystem;
                 conexoes.CONCDESC = observacoes;
                 conexoes.CONNIDCLI = _Id;
-                ConexoesProfile profile = new ConexoesProfile();
-                profile.Executar(conexoesDal, conexoes);
+                conexoes.Incluir();
                 message = "Conexão criada com sucesso!";
             }
 
@@ -143,17 +140,10 @@ namespace WinFormsApp1.UI
         private void BTN_Alterar_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(TXB_IDConexao.Text);
-            string cliente = TXB_Cliente.Text;
-
-            var context = new SuporteContext();
-            var clienteDal = new DAL<ASENTENT>(context);
-            var conexoesDal = new DAL<ASENTENT_CON>(context);
-            var recuperaClientePorNome = clienteDal.GetFor(c => c.ENTCNOMENT.Equals(cliente));
-            var recuperaConexaoPorNome = conexoesDal.GetFor(c => c.CONNID_CON.Equals(id));
+            var recuperaConexaoPorNome = conexoes.RetornaConexaoPorID(id);
 
             if (recuperaConexaoPorNome != null) 
             {
-                //recuperaConexaoPorNome.CONNID_CON = id;
                 recuperaConexaoPorNome.CONCTIPCO = CB_TipoConexao.SelectedItem.ToString(); 
                 recuperaConexaoPorNome.CONCIPCON = TXB_Endereco.Text;
                 recuperaConexaoPorNome.CONCTIP = CB_Tipo.SelectedItem.ToString();
@@ -162,8 +152,7 @@ namespace WinFormsApp1.UI
                 recuperaConexaoPorNome.CONCUSRART = TXB_UsrArtsystem.Text;
                 recuperaConexaoPorNome.CONCSENART = TXB_SenhaArtsystem.Text;
                 recuperaConexaoPorNome.CONCDESC = TXB_Observacoes.Text;
-                //recuperaConexaoPorNome.CONNIDCLI = recuperaClientePorNome.ENTNID_ENT;
-                conexoesDal.UpdateDB(recuperaConexaoPorNome);
+                recuperaConexaoPorNome.Atualizar();
             }
 
             MessageBox.Show("Dados alterados Com sucesso!", "Alteração de dados", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -16,6 +16,8 @@ namespace WinFormsApp1.UI
     {
         List<ItemBox> _ListaBusca = new List<ItemBox>();
         public int idSelect { get; set; }
+
+        ASENTENT clientes = new ASENTENT();
         public Finder()
         {
             InitializeComponent();
@@ -27,13 +29,11 @@ namespace WinFormsApp1.UI
 
         private void PreencherLista()
         {
-            var context = new SuporteContext();
-            var clienteDal = new DAL<ASENTENT>(context);
-
+            
             LB_Finder.Items.Clear();
             _ListaBusca.Clear();
 
-            var retornoTodosOsClientes = clienteDal.GetAll().Where(c => c.ENTCTIPPES.ToString() == "J");
+            var retornoTodosOsClientes = clientes.RetornaClientes();
             foreach (var cliente in retornoTodosOsClientes)
             {
                 ItemBox x = new ItemBox();

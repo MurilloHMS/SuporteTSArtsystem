@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WinFormsApp1.Databases;
 
 namespace WinFormsApp1.Models
 {
+
+    
     public class ASENTENT
     {
         [Key]
@@ -33,12 +30,25 @@ namespace WinFormsApp1.Models
         public DateTime? ENTDDATCAD { get; set; } //data de cadastro
         public string? ENTCUSUALT { get; set; } //usuario alteração
         public DateTime? ENTDDATALT { get; set; } //data de alteração
-        /*public virtual ICollection<Conexoes> Conexao { get; set; } = new List<Conexoes>();
-        
-        public void AdicionarConexao(Conexoes conexao)
+
+        private SuporteContext context = new SuporteContext();
+
+
+        public IEnumerable<ASENTENT> RetornaClientes()
         {
-            Conexao.Add(conexao);
-        }*/
+            var clienteDal = new DAL<ASENTENT>(context);
+
+            return clienteDal.GetAll().Where(c => c.ENTCTIPPES.ToString() == "J");
+
+        }
+
+        public ASENTENT RetornaClientePorNome(string cliente)
+        {
+            var clienteDAL = new DAL<ASENTENT>(context);
+
+            return clienteDAL.GetFor(c => c.ENTCNOMENT.Equals(cliente));
+        }
+
     }
 
 }

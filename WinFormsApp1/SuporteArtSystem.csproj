@@ -19,11 +19,16 @@
   </PropertyGroup>
 	<PropertyGroup>
 		<IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+		<ApplicationIcon>Computer Support.ico</ApplicationIcon>
 	</PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <Optimize>True</Optimize>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Computer Support.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
