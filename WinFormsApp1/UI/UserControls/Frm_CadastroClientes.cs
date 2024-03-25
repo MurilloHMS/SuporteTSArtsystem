@@ -51,7 +51,18 @@ namespace WinFormsApp1.UI.UserControls
             var context = new SuporteContext();
             var conexoesDal = new DAL<ASENTENT_CON>(context);
             var resultado = conexoesDal.listFor(r => r.CONNIDCLI.Equals(idCliente));
+            
             DGV_ConexoesRemotas.DataSource = resultado;
+            DGV_ConexoesRemotas.Columns["CONNID_CON"].Visible = false;
+            DGV_ConexoesRemotas.Columns["CONCTIPCO"].HeaderText = "TIPO CONEXÃO";
+            DGV_ConexoesRemotas.Columns["CONCDESC"].HeaderText = "DESCRIÇÃO";
+            DGV_ConexoesRemotas.Columns["CONCIPCON"].HeaderText = "IP CONEXÃO";
+            DGV_ConexoesRemotas.Columns["CONCTIP"].HeaderText = "TIPO";
+            DGV_ConexoesRemotas.Columns["CONCUSRTS"].HeaderText = "USUÁRIO CONEXÃO";
+            DGV_ConexoesRemotas.Columns["CONCSENTS"].HeaderText = "SENHA CONEXÃO";
+            DGV_ConexoesRemotas.Columns["CONCUSRART"].HeaderText = "USUÁRIO ARTSYSTEM";
+            DGV_ConexoesRemotas.Columns["CONCSENART"].HeaderText = "SENHA ARTSYSTEM";
+            DGV_ConexoesRemotas.Columns["CONNIDCLI"].Visible = false;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -62,6 +73,8 @@ namespace WinFormsApp1.UI.UserControls
                 var nomeCliente = TXB_Nome.Text;
                 Frm_CadastroConexao frm = new Frm_CadastroConexao(idCliente, nomeCliente, false);
                 frm.ShowDialog();
+                Preencher(idCliente);
+                
             }
 
         }
@@ -136,6 +149,8 @@ namespace WinFormsApp1.UI.UserControls
                     ASENTENT_CON resultado = conexoesDal.GetFor(c => c.CONNID_CON.Equals(id));
                     conexoesDal.DeleteDB(resultado);
                     MessageBox.Show("Dados Excluidos Com Sucesso","Exclusão", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    int idCliente = int.Parse(TXB_ID.Text);
+                    Preencher(idCliente);
 
                 }
             }
@@ -152,6 +167,8 @@ namespace WinFormsApp1.UI.UserControls
                     int id = int.Parse(ids);
                     Frm_CadastroConexao frm = new Frm_CadastroConexao(id, nomeCliente, true);
                     frm.ShowDialog();
+                    int idCliente = int.Parse(TXB_ID.Text);
+                    Preencher(idCliente);
 
                 }
             }

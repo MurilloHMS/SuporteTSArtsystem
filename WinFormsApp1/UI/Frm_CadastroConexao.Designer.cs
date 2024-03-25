@@ -267,7 +267,7 @@
             // 
             CB_UsrConexaoRemota.DropDownStyle = ComboBoxStyle.DropDownList;
             CB_UsrConexaoRemota.FormattingEnabled = true;
-            CB_UsrConexaoRemota.Items.AddRange(new object[] { "ART", "ARTYSTEM", "AS_BXALOGS", "AS_INSTALL", "TODOS" });
+            CB_UsrConexaoRemota.Items.AddRange(new object[] { "ART", "ARTYSTEM", "AS_BXALOGS", "AS_INSTALL", "ADMINISTRADOR", "ADMINISTRATOR", "TODOS (ARTSYSTEM)" });
             CB_UsrConexaoRemota.Location = new Point(18, 138);
             CB_UsrConexaoRemota.Margin = new Padding(3, 2, 3, 2);
             CB_UsrConexaoRemota.Name = "CB_UsrConexaoRemota";
