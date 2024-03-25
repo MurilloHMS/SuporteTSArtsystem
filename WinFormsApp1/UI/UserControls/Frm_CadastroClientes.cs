@@ -18,58 +18,40 @@ namespace WinFormsApp1.UI.UserControls
     public partial class Frm_CadastroClientes : UserControl
     {
 
+        ASENTENT clientes = new ASENTENT();
+
         public Frm_CadastroClientes()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Finder finder = new Finder();
             finder.ShowDialog();
 
-            var context = new SuporteContext();
-            var clienteDal = new DAL<ASENTENT>(context);
-            var conexoesDal = new DAL<ASENTENT_CON>(context);
             var id = finder.idSelect;
-            var recuperaClientePorNome = clienteDal.GetFor(c => c.ENTNID_ENT.Equals(id));
-
+            
             if (finder.DialogResult == DialogResult.OK)
             {
-                var idCliente = recuperaClientePorNome.ENTNID_ENT;
-                TXB_ID.Text = Convert.ToString(idCliente);
-                TXB_Nome.Text = recuperaClientePorNome.ENTCNOMENT;
-                TXB_Apelido.Text = recuperaClientePorNome.ENTCAPELID;
-                MTXB_Cnpj.Text = recuperaClientePorNome.ENTCCODCPF;
-
-                var resultado = conexoesDal.listFor(r => r.CONNIDCLI.Equals(idCliente));
-                DGV_ConexoesRemotas.DataSource = resultado;
+                Preencher(id);
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Preencher(int id)
         {
-            ASENTENT cliente = new ASENTENT();
-            cliente.ENTCNOMENT = TXB_Nome.Text;
-            cliente.ENTCAPELID = TXB_Apelido.Text;
-            cliente.ENTCCODCPF = MTXB_Cnpj.Text;
 
+            var recuperaClientePorNome = clientes.RetornaClientePorId(id);
+            var idCliente = recuperaClientePorNome.ENTNID_ENT;
+            TXB_ID.Text = Convert.ToString(idCliente);
+            TXB_Nome.Text = recuperaClientePorNome.ENTCNOMENT;
+            TXB_Apelido.Text = recuperaClientePorNome.ENTCAPELID;
+            MTXB_Cnpj.Text = recuperaClientePorNome.ENTCCODCPF;
             var context = new SuporteContext();
-            var clienteDal = new DAL<ASENTENT>(context);
-
-            ClienteProfile profile = new ClienteProfile();
-            profile.Executar(clienteDal, cliente);
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
+            var conexoesDal = new DAL<ASENTENT_CON>(context);
+            var resultado = conexoesDal.listFor(r => r.CONNIDCLI.Equals(idCliente));
+            DGV_ConexoesRemotas.DataSource = resultado;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -98,7 +80,7 @@ namespace WinFormsApp1.UI.UserControls
                 string tipoConexao = row.Cells[1].Value.ToString();
                 string username = row.Cells[5].Value.ToString();
                 Process process = new Process();
-                Settings settings = new Settings(); 
+                Settings settings = new Settings();
                 string anydesk = settings.Anydesk;
 
                 switch (tipoConexao)
@@ -114,7 +96,7 @@ namespace WinFormsApp1.UI.UserControls
                             MessageBox.Show("Falta configurar o anydesk");
                             return;
                         }
-                       
+
                         break;
                     case "TS":
                         string rdpFilePath = Path.Combine(Path.GetTempPath(), "remote_connection.rdp");
@@ -148,25 +130,22 @@ namespace WinFormsApp1.UI.UserControls
 
                     DataGridViewRow selectedRow = DGV_ConexoesRemotas.SelectedRows[0];
 
-                    
+
                     string ids = selectedRow.Cells[0].Value.ToString();
                     int id = int.Parse(ids);
                     ASENTENT_CON resultado = conexoesDal.GetFor(c => c.CONNID_CON.Equals(id));
                     conexoesDal.DeleteDB(resultado);
+                    MessageBox.Show("Dados Excluidos Com Sucesso","Exclusão", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
             }
 
-            if (e.KeyCode == Keys.Enter) 
+            if (e.KeyCode == Keys.Enter)
             {
                 DialogResult msg = MessageBox.Show("Deseja alterar a Conexão selecionada? ", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (msg == DialogResult.Yes)
                 {
-                    var context = new SuporteContext();
-                    var conexoesDal = new DAL<ASENTENT_CON>(context);
-
                     DataGridViewRow selectedRow = DGV_ConexoesRemotas.SelectedRows[0];
-
 
                     string ids = selectedRow.Cells[0].Value.ToString();
                     var nomeCliente = TXB_Nome.Text;
@@ -175,6 +154,15 @@ namespace WinFormsApp1.UI.UserControls
                     frm.ShowDialog();
 
                 }
+            }
+        }
+
+        private void TXB_ID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                int id = int.Parse(TXB_ID.Text);
+                Preencher(id);
             }
         }
     }

@@ -49,6 +49,12 @@ namespace WinFormsApp1.Models
             return clienteDAL.GetFor(c => c.ENTCNOMENT.Equals(cliente));
         }
 
+        public ASENTENT RetornaClientePorId(int id)
+        {
+            var clienteDAL = new DAL<ASENTENT>(context);
+            return clienteDAL.GetFor(c => c.ENTNID_ENT.Equals(id));
+        }
+
     }
 
 }

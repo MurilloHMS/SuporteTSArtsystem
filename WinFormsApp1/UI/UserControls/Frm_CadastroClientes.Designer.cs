@@ -71,6 +71,7 @@
             TXB_ID.Name = "TXB_ID";
             TXB_ID.Size = new Size(55, 23);
             TXB_ID.TabIndex = 1;
+            TXB_ID.KeyDown += TXB_ID_KeyDown;
             // 
             // groupBox1
             // 
@@ -254,7 +255,6 @@
             button10.TabIndex = 13;
             button10.Text = "Inserir";
             button10.UseVisualStyleBackColor = true;
-            button10.Click += button10_Click;
             // 
             // LSTB_Contatos
             // 
