@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Application Files\SuporteArtSystem_1_0_0_0\SuporteArtSystem.dll.manifest" size="10702">
+    <dependentAssembly dependencyType="install" codebase="Application Files\SuporteArtSystem_1_0_0_0\SuporteArtSystem.dll.manifest" size="11199">
       <assemblyIdentity name="SuporteArtSystem.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uYC0Qt0uH7aGfgZuov79oYvzw9sOoViVxWyiijSJrCE=</dsig:DigestValue>
+        <dsig:DigestValue>rOKApEUl/qV54dc1zy20hB5E+cARnR3DVti4eOfiwR8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

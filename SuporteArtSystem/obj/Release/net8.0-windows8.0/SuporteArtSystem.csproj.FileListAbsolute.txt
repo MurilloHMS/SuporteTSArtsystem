@@ -116,3 +116,8 @@ C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\obj\
 C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\obj\Release\net8.0-windows8.0\SuporteArtSystem.pdb
 C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\obj\Release\net8.0-windows8.0\SuporteArtSystem.genruntimeconfig.cache
 C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\obj\Release\net8.0-windows8.0\ref\SuporteArtSystem.dll
+C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\bin\Release\net8.0-windows8.0\SuporteArtSystem.dll.manifest
+C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\bin\Release\net8.0-windows8.0\SuporteArtSystem.application
+C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\obj\Release\net8.0-windows8.0\SuporteArtSystem.genpublishdeps.cache
+C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\obj\Release\net8.0-windows8.0\SuporteArtSystem.dll.manifest
+C:\Users\artsy\trabalho\desenvolvimento\SuporteTSArtsystem\SuporteArtSystem\obj\Release\net8.0-windows8.0\SuporteArtSystem.application

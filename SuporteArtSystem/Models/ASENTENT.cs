@@ -41,7 +41,6 @@ namespace SuporteArtSystem.Models
             return clienteDal.GetAll().Where(c => c.ENTCTIPPES.ToString() == "J");
 
         }
-
         public ASENTENT RetornaClientePorNome(string cliente)
         {
             var clienteDAL = new DAL<ASENTENT>(context);
