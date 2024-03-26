@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>A:\SuporteTSArtsystem\WinFormsApp1\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="UI\Frm_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Frm_CadastroConexao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Frm_CadastroContatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Frm_MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\UserControls\Frm_CadastroClientes_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\UserControls\Frm_Configuracoes_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\UserControls\Frm_ControleDeScripts_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
