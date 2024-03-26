@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuporteArtSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63d17d81490bba4a4c5241b513cd002cb41b62b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4856efdf9dd09ef3145c332ee5816ae842bada59")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuporteArtSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuporteArtSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

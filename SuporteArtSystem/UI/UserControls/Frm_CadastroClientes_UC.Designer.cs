@@ -156,6 +156,7 @@
             TXB_Nome.Name = "TXB_Nome";
             TXB_Nome.Size = new Size(421, 27);
             TXB_Nome.TabIndex = 3;
+            TXB_Nome.KeyDown += TXB_Nome_KeyDown;
             // 
             // groupBox2
             // 
@@ -186,7 +187,7 @@
             tabPage1.Controls.Add(button7);
             tabPage1.Location = new Point(4, 29);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3, 3, 3, 3);
+            tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(871, 464);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Conexões Remotas";
@@ -241,7 +242,7 @@
             tabPage2.Controls.Add(LSTB_Contatos);
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3, 3, 3, 3);
+            tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(871, 464);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Dados de Contato";
@@ -277,14 +278,14 @@
             LSTB_Contatos.Size = new Size(865, 404);
             LSTB_Contatos.TabIndex = 12;
             // 
-            // Frm_CadastroClientes
+            // Frm_CadastroClientes_UC
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Frm_CadastroClientes";
+            Name = "Frm_CadastroClientes_UC";
             Size = new Size(938, 773);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

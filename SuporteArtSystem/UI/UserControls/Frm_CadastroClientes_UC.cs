@@ -12,6 +12,8 @@ namespace SuporteArtSystem.UI.UserControls
         public Frm_CadastroClientes_UC()
         {
             InitializeComponent();
+            TXB_Nome.CharacterCasing = CharacterCasing.Upper;
+            ConfigurarAutoComplete();
         }
 
 
@@ -26,6 +28,13 @@ namespace SuporteArtSystem.UI.UserControls
             {
                 Preencher(id);
             }
+        }
+
+        private void PreencherBuscaPorNome(string nome)
+        {
+            var consulta = clientes.RetornaClientePorNome(nome);
+            int id = consulta.ENTNID_ENT;
+            Preencher(id);
         }
 
         private void Preencher(int id)
@@ -52,6 +61,21 @@ namespace SuporteArtSystem.UI.UserControls
             DGV_ConexoesRemotas.Columns["CONCUSRART"].HeaderText = "USUÁRIO ARTSYSTEM";
             DGV_ConexoesRemotas.Columns["CONCSENART"].HeaderText = "SENHA ARTSYSTEM";
             DGV_ConexoesRemotas.Columns["CONNIDCLI"].Visible = false;
+        }
+
+        private void ConfigurarAutoComplete()
+        {
+            var autoCompleteCollection = new AutoCompleteStringCollection();
+            var todosOsClientes = clientes.RetornaClientes();
+
+            foreach (var item in todosOsClientes)
+            {
+                autoCompleteCollection.Add(item.ENTCNOMENT);
+            }
+
+            TXB_Nome.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            TXB_Nome.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            TXB_Nome.AutoCompleteCustomSource = autoCompleteCollection;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -175,6 +199,14 @@ namespace SuporteArtSystem.UI.UserControls
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TXB_Nome_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                PreencherBuscaPorNome(TXB_Nome.Text);
+            }
         }
     }
 }
