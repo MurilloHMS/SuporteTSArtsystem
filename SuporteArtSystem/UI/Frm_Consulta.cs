@@ -20,7 +20,7 @@ namespace SuporteArtSystem.UI
 
         private void PreencherLista()
         {
-            
+
             LB_Finder.Items.Clear();
             _ListaBusca.Clear();
 
@@ -63,11 +63,26 @@ namespace SuporteArtSystem.UI
 
         private void LB_Finder_DoubleClick(object sender, EventArgs e)
         {
-            ItemBox itemSelecionado = (ItemBox)LB_Finder.Items[LB_Finder.SelectedIndex];
-            DialogResult = DialogResult.OK;
-            idSelect = itemSelecionado.Id;
-            this.Close();
+            try
+            {
+                ItemBox itemSelecionado = (ItemBox)LB_Finder.Items[LB_Finder.SelectedIndex];
+                DialogResult = DialogResult.OK;
+                idSelect = itemSelecionado.Id;
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Atenção selecione um valor válido!", "Valor selecionado invalido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
 
+        private void Frm_Consulta_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape) 
+            {
+                this.Close();
+            }
+        }
     }
 }

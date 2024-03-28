@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.Data.SqlClient;
 using SuporteArtSystem.Databases;
 
 namespace SuporteArtSystem.Models
@@ -38,14 +39,29 @@ namespace SuporteArtSystem.Models
         {
             var clienteDal = new DAL<ASENTENT>(context);
 
-            return clienteDal.GetAll().Where(c => c.ENTCTIPPES.ToString() == "J");
+            return clienteDal.GetAll().Where(c => c.ENTCTIPPES.ToString().Trim() == "J");
 
         }
         public ASENTENT RetornaClientePorNome(string cliente)
         {
             var clienteDAL = new DAL<ASENTENT>(context);
 
-            return clienteDAL.GetFor(c => c.ENTCNOMENT.Equals(cliente));
+            var consulta = clienteDAL.GetFor(c => c.ENTCNOMENT.Trim().Contains(cliente.Trim()));
+
+            if (consulta == null)
+            {
+                throw new Exception("Cliente não encontrado");
+            }
+            else
+            {
+                return consulta;
+            }
+        }
+        public ASENTENT RetornaClientePorApelido(string cliente)
+        {
+            var clienteDAL = new DAL<ASENTENT>(context);
+
+            return clienteDAL.GetFor(c => c.ENTCAPELID.Trim().Equals(cliente.Trim()));
         }
 
         public ASENTENT RetornaClientePorId(int id)

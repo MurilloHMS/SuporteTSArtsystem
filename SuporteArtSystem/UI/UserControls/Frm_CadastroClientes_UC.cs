@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Microsoft.Data.SqlClient;
 using SuporteArtSystem.Databases;
 using SuporteArtSystem.Models;
 
@@ -7,13 +8,15 @@ namespace SuporteArtSystem.UI.UserControls
     public partial class Frm_CadastroClientes_UC : UserControl
     {
 
-        ASENTENT clientes = new ASENTENT();
+        private readonly ASENTENT clientes = new ASENTENT();
 
         public Frm_CadastroClientes_UC()
         {
             InitializeComponent();
             TXB_Nome.CharacterCasing = CharacterCasing.Upper;
-            ConfigurarAutoComplete();
+            TXB_Apelido.CharacterCasing = CharacterCasing.Upper;
+            AutoCompleteNome();
+            AutoCompleteApelido();
         }
 
 
@@ -32,7 +35,23 @@ namespace SuporteArtSystem.UI.UserControls
 
         private void PreencherBuscaPorNome(string nome)
         {
-            var consulta = clientes.RetornaClientePorNome(nome);
+            try
+            {
+                var consulta = clientes.RetornaClientePorNome(nome);
+                int id = consulta.ENTNID_ENT;
+                Preencher(id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
+
+        }
+        private void PreencherBuscaPorApelido(string apelido)
+        {
+            var consulta = clientes.RetornaClientePorApelido(apelido);
             int id = consulta.ENTNID_ENT;
             Preencher(id);
         }
@@ -63,19 +82,52 @@ namespace SuporteArtSystem.UI.UserControls
             DGV_ConexoesRemotas.Columns["CONNIDCLI"].Visible = false;
         }
 
-        private void ConfigurarAutoComplete()
+        private void AlterarDadosSelecionados()
+        {
+            DialogResult msg = MessageBox.Show("Deseja alterar a Conexão selecionada? ", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (msg == DialogResult.Yes)
+            {
+                DataGridViewRow selectedRow = DGV_ConexoesRemotas.SelectedRows[0];
+
+                string ids = selectedRow.Cells[0].Value.ToString();
+                var nomeCliente = TXB_Nome.Text;
+                int id = int.Parse(ids);
+                Frm_CadastroConexao frm = new Frm_CadastroConexao(id, nomeCliente, true);
+                frm.ShowDialog();
+                int idCliente = int.Parse(TXB_ID.Text);
+                Preencher(idCliente);
+
+            }
+        }
+
+        private void AutoCompleteNome()
         {
             var autoCompleteCollection = new AutoCompleteStringCollection();
             var todosOsClientes = clientes.RetornaClientes();
 
             foreach (var item in todosOsClientes)
             {
-                autoCompleteCollection.Add(item.ENTCNOMENT);
+                autoCompleteCollection.Add(item.ENTCNOMENT.Trim());
             }
 
             TXB_Nome.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             TXB_Nome.AutoCompleteSource = AutoCompleteSource.CustomSource;
             TXB_Nome.AutoCompleteCustomSource = autoCompleteCollection;
+        }
+
+        private void AutoCompleteApelido()
+        {
+            var autoCompleteCollection = new AutoCompleteStringCollection();
+            var todosOsClientes = clientes.RetornaClientes();
+
+            foreach (var item in todosOsClientes)
+            {
+                autoCompleteCollection.Add(item.ENTCAPELID.Trim());
+            }
+
+            TXB_Apelido.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            TXB_Apelido.AutoCompleteSource = AutoCompleteSource.CustomSource;
+            TXB_Apelido.AutoCompleteCustomSource = autoCompleteCollection;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -89,11 +141,6 @@ namespace SuporteArtSystem.UI.UserControls
                 Preencher(idCliente);
 
             }
-
-        }
-
-        private void DGV_ConexoesRemotas_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
 
         }
 
@@ -139,11 +186,6 @@ namespace SuporteArtSystem.UI.UserControls
             }
         }
 
-        private void DGV_ConexoesRemotas_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-        }
-
         private void DGV_ConexoesRemotas_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Delete)
@@ -170,19 +212,20 @@ namespace SuporteArtSystem.UI.UserControls
 
             if (e.KeyCode == Keys.Enter)
             {
-                DialogResult msg = MessageBox.Show("Deseja alterar a Conexão selecionada? ", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (msg == DialogResult.Yes)
+                if (!(string.IsNullOrEmpty(TXB_Nome.Text)))
                 {
-                    DataGridViewRow selectedRow = DGV_ConexoesRemotas.SelectedRows[0];
+                    AlterarDadosSelecionados();
+                }
+            }
 
-                    string ids = selectedRow.Cells[0].Value.ToString();
-                    var nomeCliente = TXB_Nome.Text;
-                    int id = int.Parse(ids);
-                    Frm_CadastroConexao frm = new Frm_CadastroConexao(id, nomeCliente, true);
-                    frm.ShowDialog();
-                    int idCliente = int.Parse(TXB_ID.Text);
-                    Preencher(idCliente);
-
+            if (e.Control && e.KeyCode == Keys.C)
+            {
+                if (DGV_ConexoesRemotas.SelectedRows.Count > 0)
+                {
+                    DataGridViewRow row = DGV_ConexoesRemotas.SelectedRows[0];
+                    string value = row.Cells[3].Value.ToString();
+                    MessageBox.Show("Dados de IP copiados com sucesso! ");
+                    Clipboard.SetText(value);
                 }
             }
         }
@@ -206,6 +249,23 @@ namespace SuporteArtSystem.UI.UserControls
             if (e.KeyCode == Keys.Enter)
             {
                 PreencherBuscaPorNome(TXB_Nome.Text);
+            }
+        }
+
+        private void Btn_Alterar_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(TXB_ID.Text))
+            {
+                AlterarDadosSelecionados();
+            }
+
+        }
+
+        private void TXB_Apelido_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                PreencherBuscaPorApelido(TXB_Apelido.Text);
             }
         }
     }

@@ -8450,19 +8450,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\artsy\\.nuget\\packages\\": {}
+    "C:\\Users\\Murillo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\SuporteArtSystem\\SuporteArtSystem.csproj",
+      "projectUniqueName": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\SuporteArtSystem.csproj",
       "projectName": "SuporteArtSystem",
-      "projectPath": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\SuporteArtSystem\\SuporteArtSystem.csproj",
-      "packagesPath": "C:\\Users\\artsy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artsy\\trabalho\\desenvolvimento\\SuporteTSArtsystem\\SuporteArtSystem\\obj\\",
+      "projectPath": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\SuporteArtSystem.csproj",
+      "packagesPath": "C:\\Users\\Murillo\\.nuget\\packages\\",
+      "outputPath": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\artsy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Murillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
