@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "A:\\SuporteTSArtsystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|a:\\suportetsartsystem\\suporteartsystem\\ui\\frm_consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\ui\\frm_consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|a:\\suportetsartsystem\\suporteartsystem\\ui\\frm_consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\ui\\frm_consulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|a:\\suportetsartsystem\\suporteartsystem\\ui\\usercontrols\\frm_cadastroclientes_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\ui\\usercontrols\\frm_cadastroclientes_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|a:\\suportetsartsystem\\suporteartsystem\\ui\\usercontrols\\frm_cadastroclientes_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\ui\\usercontrols\\frm_cadastroclientes_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|a:\\suportetsartsystem\\suporteartsystem\\ui\\usercontrols\\frm_cadastroclientes_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\ui\\usercontrols\\frm_cadastroclientes_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|a:\\suportetsartsystem\\suporteartsystem\\ui\\frm_mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\ui\\frm_mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|a:\\suportetsartsystem\\suporteartsystem\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\suporteartsystem\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\ui\\frm_cadastroconexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\suporteartsystem\\models\\asentent_con.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\models\\asentent_con.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|A:\\SuporteTSArtsystem\\suporteartsystem\\models\\asentent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11BCF741-AF80-4A6B-8BB3-8F00D4FECBD1}|SuporteArtSystem\\SuporteArtSystem.csproj|solutionrelative:suporteartsystem\\models\\asentent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,52 +51,87 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Frm_Consulta.cs",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_Consulta.cs",
-              "RelativeDocumentMoniker": "SuporteArtSystem\\UI\\Frm_Consulta.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_Consulta.cs",
-              "RelativeToolTip": "SuporteArtSystem\\UI\\Frm_Consulta.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAA3wFQAAAANAAAA",
+              "Title": "Frm_CadastroClientes_UC.cs",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
+              "RelativeDocumentMoniker": "SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
+              "RelativeToolTip": "SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:24:15.726Z",
+              "WhenOpened": "2024-04-01T21:19:18.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Frm_Consulta.cs [Projeto]",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_Consulta.cs",
-              "RelativeDocumentMoniker": "SuporteArtSystem\\UI\\Frm_Consulta.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_Consulta.cs [Projeto]",
-              "RelativeToolTip": "SuporteArtSystem\\UI\\Frm_Consulta.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:24:13.608Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Frm_CadastroClientes_UC.cs [Projeto]",
               "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
               "RelativeDocumentMoniker": "SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
               "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs [Projeto]",
               "RelativeToolTip": "SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T14:38:39.44Z",
+              "WhenOpened": "2024-04-01T21:19:15.679Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Frm_CadastroClientes_UC.cs",
-              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
-              "RelativeDocumentMoniker": "SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
-              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
-              "RelativeToolTip": "SuporteArtSystem\\UI\\UserControls\\Frm_CadastroClientes_UC.cs",
-              "ViewState": "AQIAAAABAAAAAAAAAAAYwA0BAAAJAAAA",
+              "DocumentIndex": 2,
+              "Title": "Frm_MainWindow.cs [Projeto]",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_MainWindow.cs",
+              "RelativeDocumentMoniker": "SuporteArtSystem\\UI\\Frm_MainWindow.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_MainWindow.cs [Projeto]",
+              "RelativeToolTip": "SuporteArtSystem\\UI\\Frm_MainWindow.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T18:40:34.591Z",
+              "WhenOpened": "2024-04-01T21:19:04.119Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ASENTENT_CON.cs",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\Models\\ASENTENT_CON.cs",
+              "RelativeDocumentMoniker": "SuporteArtSystem\\Models\\ASENTENT_CON.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\Models\\ASENTENT_CON.cs",
+              "RelativeToolTip": "SuporteArtSystem\\Models\\ASENTENT_CON.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T20:47:32.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ASENTENT.cs",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\Models\\ASENTENT.cs",
+              "RelativeDocumentMoniker": "SuporteArtSystem\\Models\\ASENTENT.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\Models\\ASENTENT.cs",
+              "RelativeToolTip": "SuporteArtSystem\\Models\\ASENTENT.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAADgv0IAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T20:47:30.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_CadastroConexao.cs",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_CadastroConexao.cs",
+              "RelativeDocumentMoniker": "SuporteArtSystem\\UI\\Frm_CadastroConexao.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_CadastroConexao.cs",
+              "RelativeToolTip": "SuporteArtSystem\\UI\\Frm_CadastroConexao.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwDgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T18:21:53.932Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_CadastroConexao.cs [Projeto]",
+              "DocumentMoniker": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_CadastroConexao.cs",
+              "RelativeDocumentMoniker": "SuporteArtSystem\\UI\\Frm_CadastroConexao.cs",
+              "ToolTip": "A:\\SuporteTSArtsystem\\SuporteArtSystem\\UI\\Frm_CadastroConexao.cs [Projeto]",
+              "RelativeToolTip": "SuporteArtSystem\\UI\\Frm_CadastroConexao.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T18:21:37.48Z"
             }
           ]
         }

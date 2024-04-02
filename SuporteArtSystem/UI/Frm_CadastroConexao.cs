@@ -75,7 +75,7 @@ namespace SuporteArtSystem.UI
             List<string> usuarios = new List<string>() { "ART", "ARTSYSTEM", "AS_BXALOGS", "AS_INSTALL" };
 
             string message = string.Empty;
-            if (usrConexao.Equals("TODOS"))
+            if (usrConexao.Equals("TODOS (ARTSYSTEM)"))
             {
                 foreach (string i in usuarios)
                 {
